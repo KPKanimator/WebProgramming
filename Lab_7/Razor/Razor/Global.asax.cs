@@ -13,7 +13,6 @@ namespace Razor
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-			
         }
     }
 }
