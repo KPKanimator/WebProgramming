@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllersAndActions", "ControllersAndActions\ControllersAndActions.csproj", "{8F95AF20-CE6A-43DC-B322-B8DEA1E973E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllersAndActions.Tests", "ControllersAndActions.Tests\ControllersAndActions.Tests.csproj", "{190E0312-A871-4693-B643-2918761F3C59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F95AF20-CE6A-43DC-B322-B8DEA1E973E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F95AF20-CE6A-43DC-B322-B8DEA1E973E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F95AF20-CE6A-43DC-B322-B8DEA1E973E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F95AF20-CE6A-43DC-B322-B8DEA1E973E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190E0312-A871-4693-B643-2918761F3C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190E0312-A871-4693-B643-2918761F3C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190E0312-A871-4693-B643-2918761F3C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190E0312-A871-4693-B643-2918761F3C59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

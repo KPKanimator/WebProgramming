@@ -1,0 +1,10 @@
+﻿@model IEnumerable<string>
+<div>
+    <h2>Названия фруктов</h2>
+    <ul>
+        @foreach (string fruit in Model)
+        {
+            <li>@fruit</li>
+        }
+    </ul>
+</div>
