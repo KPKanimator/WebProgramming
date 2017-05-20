@@ -1,0 +1,28 @@
+﻿@model string
+@using HelperMethods.Infrastructure
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>legend {font-weight:bold}</style>
+</head>
+<body>
+    <fieldset>
+        <legend>Это сообщение сгенерированное представлением</legend>
+        <div>
+            Сообщение:
+            <p>@Model</p>
+        </div>
+    </fieldset>
+    <br /><br />
+    <fieldset>
+        <legend>Это сообщение сгенерированное вспомогательным методом</legend>
+        @Html.DisplayMessage(Model)
+    </fieldset>
+</body>
+</html>

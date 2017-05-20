@@ -1,0 +1,27 @@
+﻿@model HelperMethods.Models.User
+@{
+    ViewBag.Title = "DisplayUser";
+}
+
+<h2>Данные пользователя</h2>
+<div class="item">
+    @Html.LabelFor(user => user.UserId)
+    @Html.Display("UserId")
+</div>
+<div class="item">
+    @Html.Label("Имя")
+    @Html.Display("FirstName")
+</div>
+<div class="item">
+    @Html.Label("Фамилия")
+    @Html.DisplayFor(m => m.LastName)
+</div>
+<div class="item">
+    @Html.Label("Роль")
+    @Html.DisplayFor(m => m.Role)
+</div>
+<div class="item">
+    @Html.Label("Дата рождения")
+    @Html.DisplayFor(m => m.BirthDate)
+</div>
+

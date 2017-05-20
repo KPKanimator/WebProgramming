@@ -1,0 +1,63 @@
+﻿@using HelperMethods.Models
+@model string
+@{
+    ViewBag.Title = "Данные пользователей";
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        UpdateTargetId = "tableBody",
+        Url = Url.Action("GetPeopleData"),
+        LoadingElementDuration = 1000,
+        LoadingElementId = "loading",
+        OnSuccess = "processData"
+    };
+}
+
+<script type="text/javascript">
+    function processData(data) {
+        var target = $("#tableBody");
+        target.empty();
+        for (var i = 0; i < data.length; i++) {
+            var user = data[i];
+            target.append("<tr><td>" + user.FirstName + "</td><td>"
+                + user.LastName + "</td><td>" + user.Role
+                + "</td></tr>");
+        }
+    }
+</script>
+
+<h2>Данные пользователей</h2>
+
+<div id="loading" class="load" style="display:none">
+    <p>Загрузка данных...</p>
+</div>
+<table>
+    <thead>
+        <tr><th>Имя</th><th>Фамилия</th><th>Роль</th></tr>
+    </thead>
+    <tbody id="tableBody">
+        @Html.Action("GetPeopleData", new { selectedRole = Model })
+    </tbody>
+</table>
+
+@using (Ajax.BeginForm(ajaxOptions))
+{
+    <div>
+        @Html.DropDownList("selectedRole", new SelectList(
+            new[] { "All" }.Concat(Enum.GetNames(typeof(Role)))))
+        <button type="submit">Отобразить</button>
+    </div>
+}
+<div>
+    @foreach (string role in Enum.GetNames(typeof(Role)))
+    {
+        <div class="ajaxLink">
+            @Ajax.ActionLink(role, "GetPeople",
+                new { selectedRole = role },
+                new AjaxOptions
+                {
+                    Url = Url.Action("GetPeopleData", new { selectedRole = role }),
+                    OnSuccess = "processData"
+                })
+        </div>
+    }
+</div>

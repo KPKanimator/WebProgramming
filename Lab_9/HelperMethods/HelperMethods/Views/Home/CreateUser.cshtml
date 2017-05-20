@@ -1,0 +1,19 @@
+﻿@model HelperMethods.Models.User
+
+@{
+    ViewBag.Title = "CreateUser";
+    Html.EnableClientValidation(false);
+}
+
+<h2>Создать пользователя: @Html.LabelForModel()</h2>
+@using (Html.BeginRouteForm("FormRoute", null, FormMethod.Post,
+    new { @class = "userCssClass", data_formType="user" }))
+{ 
+    <div class="column">
+        @Html.EditorForModel();
+    </div>
+    <div class="column">
+        @Html.EditorFor(user => user.HomeAddress)
+    </div>
+    <input type="submit" value="Отправить" />
+}

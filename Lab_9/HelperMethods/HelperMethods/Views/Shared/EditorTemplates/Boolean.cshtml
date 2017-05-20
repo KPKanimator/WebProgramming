@@ -1,0 +1,14 @@
+﻿@model bool?
+
+@if (ViewData.ModelMetadata.IsNullableValueType && Model == null)
+{
+    @:(Правда) (Ложь) <b>(Не задано)</b>
+}
+else if (Model.Value)
+{
+    @:<b>(Правда)</b> (Ложь) (Не задано)
+}
+else
+{
+    @:(Правда) <b>(Ложь)</b> (Не задано)
+}
