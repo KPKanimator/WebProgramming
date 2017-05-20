@@ -1,0 +1,68 @@
+﻿@using WebServices.Models
+
+@model IEnumerable<Reservation>
+@{
+    ViewBag.Title = "Заявки на бронирование";
+}
+
+@section Scripts {
+    <script>
+        var model = {
+            reservations: ko.observableArray(),
+            editor: {
+                name: ko.observable(""),
+                location: ko.observable("")
+            }
+        };
+
+        function sendAjaxRequest(httpMethod, callback, url, reqData) {
+            $.ajax("/api/web" + (url ? "/" + url : ""), {
+                type: httpMethod,
+                success: callback,
+                data: reqData
+            });
+        }
+
+        // ...
+
+        function handleEditorClick() {
+            sendAjaxRequest("POST", function (newItem) {
+                model.reservations.push(newItem);
+            }, null, {
+                ClientName: model.editor.name,
+                Location: model.editor.location
+            });
+        }
+
+        $(document).ready(function () {
+            getAllItems();
+            ko.applyBindings(model);
+        });
+    </script>
+
+}
+
+@section Body {
+    <div id="summary" class="section panel panel-primary">
+        ...
+    </div>
+    <div id="editor" class="section panel panel-primary">
+        <div class="panel-heading">
+            Создать заказ
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label>Имя клиента</label>
+                <input class="form-control" data-bind="value: model.editor.name" />
+            </div>
+            <div class="form-group">
+                <label>Помещение</label>
+                <input class="form-control" data-bind="value: model.editor.location" />
+            </div>
+            <button class="btn btn-primary"
+                    data-bind="click: handleEditorClick">
+                Сохранить
+            </button>
+        </div>
+    </div>
+}
