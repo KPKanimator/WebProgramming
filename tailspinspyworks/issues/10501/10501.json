@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Help Im getting that error in my machine...\n \nIm following the steps of tailspin spyworks, im connecting to the entity data source and \nthe error\n“Unable to load the specified metadata resource”\n \nhttp://www.asp.net/web-forms/tutorials/tailspin-spyworks/tailspin-spyworks-part-3[^]\n \nthis is my connection string in web config\n \n Collapse | Copy Code\n<add name=\"ApplicationServices\" connectionString=\"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\aspnetdb.mdf;User Instance=true\" providerName=\"System.Data.SqlClient\" />\n \n   <add name=\"CommerceEntities\" connectionString=\"metadata=res://*/App_Code.EDM_Commerce.csdl|res://*/App_Code.EDM_Commerce.ssdl|res://*/App_Code.EDM_Commerce.msl;provider=System.Data.SqlClient;provider connection string=\"Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Commerce.mdf;Integrated Security=True;User Instance=True;MultipleActiveResultSets=True\"\" providerName=\"System.Data.EntityClient\" />",
+    "LastUpdatedDate": "2014-01-24T01:56:26.513-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "tailspinspyworks",
+    "ReportedDate": "2014-01-23T22:07:33.277-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "“Unable to load the specified metadata resource”",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 10501
+  },
+  "FileAttachments": [
+    {
+      "FileId": 3568,
+      "FileName": "TP.jpg",
+      "DownloadUrl": ".\\3568"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I believe that it is pointing to a non existent directory (App_Code), from your attched pic I could see that it does not exist in your project, though Data_access directory does and your code is not pointing to it.\r\n\r\nTry this string or modify it to suit the application\r\n\r\n<add name=\"CommerceEntities\" connectionString=\"metadata=res://*/Data_Access.EDM_Commerce.csdl|res://*/Data_Access.EDM_Commerce.ssdl|res://*/Data_Access.EDM_Commerce.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\\SQLEXPRESS;attachdbfilename=|DataDirectory|\\Commerce.mdf;integrated security=True;user instance=True;multipleactiveresultsets=True;App=EntityFramework&quot;\" providerName=\"System.Data.EntityClient\" />\r\n\r\nThis one should work fine.\r\n\r\nGood luck \nbasba",
+      "PostedDate": "2014-01-24T01:56:26.513-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

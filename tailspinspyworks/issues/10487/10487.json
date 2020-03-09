@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The sample breaks in VS 2013 both using database file and connect the database through the server.\n\nSystem.Data.MetadataException was unhandled by user code\n  HResult=-2146232007\n  Message=Unable to load the specified metadata resource.\n  Source=System.Data.Entity\n  StackTrace:\n       at System.Data.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)\n       at System.Data.Metadata.Edm.MetadataArtifactLoaderCompositeResource..ctor(String originalPath, String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)\n       at System.Data.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)\n       at System.Data.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)\n       at System.Data.Metadata.Edm.MetadataCache.SplitPaths(String paths)\n       at System.Data.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()\n       at System.Data.Common.Utils.Memoizer`2.Result.GetValue()\n       at System.Data.Common.Utils.Memoizer`2.Evaluate(TArg arg)\n       at System.Data.EntityClient.EntityConnection.GetMetadataWorkspace(Boolean initializeAllCollections)\n       at System.Data.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()\n       at System.Data.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor)\n       at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)\n       at TailspinSpyworks.Data_Access.CommerceEntities..ctor() in c:\\VCSharpTemp\\TailspinSpyworks-v0.9\\TailspinSpyworks\\Data_Access\\EDM_Commerce.Designer.cs:line 43\n       at TailspinSpyworks.Controls.PopularItem.Page_Load(Object sender, EventArgs e) in c:\\VCSharpTemp\\TailspinSpyworks-v0.9\\TailspinSpyworks\\Controls\\PopularItem.ascx.cs:line 16\n       at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)\n       at System.Web.UI.Control.OnLoad(EventArgs e)\n       at System.Web.UI.Control.LoadRecursive()\n       at System.Web.UI.Control.LoadRecursive()\n       at System.Web.UI.BasePartialCachingControl.LoadRecursive()\n       at System.Web.UI.Control.LoadRecursive()\n       at System.Web.UI.Control.LoadRecursive()\n       at System.Web.UI.Control.LoadRecursive()\n       at System.Web.UI.Control.LoadRecursive()\n       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)\n  InnerException:",
+    "LastUpdatedDate": "2014-01-03T19:46:23.107-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "tailspinspyworks",
+    "ReportedDate": "2014-01-03T19:46:23.107-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "VS 2013 Break the controls bind to Entity Framework",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 10487
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

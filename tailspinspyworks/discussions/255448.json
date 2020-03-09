@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "603636",
+    "ThreadId": "255448",
+    "Html": "\r\n<p>I've used the online video tutorial as well as the .html tutorial, and PDF tutorial. I keep getting stuck at the MyShoppingCart.cs creation stage. In the line &quot;db.ShoppingCarts.AddObject(cartadd);&quot; the method &quot;AddObject&quot; is not recognized. I can't figure\r\n out why. Any help is appreciated.</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">using</span> System;\r\n<span style=\"color:blue\">using</span> System.Collections.Generic;\r\n<span style=\"color:blue\">using</span> System.Linq;\r\n<span style=\"color:blue\">using</span> System.Web;\r\n<span style=\"color:blue\">using</span> TailSpinPDFversion.Data_Access;\r\n<span style=\"color:blue\">using</span> TailSpinPDFversion;\r\n\r\n<span style=\"color:blue\">namespace</span> TailSpinPDFversion\r\n{\r\n    <span style=\"color:blue\">public</span> <span style=\"color:blue\">partial</span> <span style=\"color:blue\">class</span> MyShoppingCart\r\n    {\r\n        <span style=\"color:blue\">public</span> <span style=\"color:blue\">void</span> AddItem(<span style=\"color:blue\">string</span> cartID, <span style=\"color:blue\">int</span> productID, <span style=\"color:blue\">int</span> quantity)\r\n        {\r\n            <span style=\"color:blue\">using</span> (CommerceEntities db = <span style=\"color:blue\">new</span> CommerceEntities())\r\n            {\r\n                <span style=\"color:blue\">try</span>\r\n                {\r\n                    <span style=\"color:blue\">var</span> myItem =\r\n                        (<span style=\"color:blue\">from</span> c <span style=\"color:blue\">in</span> db.ShoppingCarts <span style=\"color:blue\">where</span> c.CartID == cartID &amp;&amp; c.ProductID == productID <span style=\"color:blue\">select</span> c).\r\n                            FirstOrDefault();\r\n                    <span style=\"color:blue\">if</span>(myItem == <span style=\"color:blue\">null</span>)\r\n                    {\r\n                        ShoppingCart cartadd = <span style=\"color:blue\">new</span> ShoppingCart();\r\n                        cartadd.CartID = cartID;\r\n                        cartadd.Quantity = quantity;\r\n                        cartadd.ProductID = productID;\r\n                        cartadd.DateCreated = DateTime.Now;\r\n                        db.ShoppingCarts.<span style=\"color:#ff0000\">AddObject</span>(cartadd);\r\n                    }\r\n                }\r\n                <span style=\"color:blue\">catch</span> (Exception)\r\n                {\r\n                    \r\n                    <span style=\"color:blue\">throw</span>;\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n</pre>\r\n</div>\r\n<p></p>\r\n",
+    "PostedDate": "2011-04-27T08:18:11.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "603641",
+    "ThreadId": "255448",
+    "Html": "<p>Did you compare your code to the finished project ?</p>",
+    "PostedDate": "2011-04-27T08:24:26.303-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "603662",
+    "ThreadId": "255448",
+    "Html": "<p>Up to that point (creating the AddItem method from the PDF tutorial) the code is the same expect for the name of the project. Below is the error that I get when building at that point.</p>\r\n<p>&nbsp;</p>\r\n<p>'IdeaBlade.EntityModel.EntityQuery&lt;TailSpinPDFversion.Data_Access.ShoppingCart&gt;' does not contain a definition for 'AddObject' and no extension method 'AddObject' accepting a first argument of type 'IdeaBlade.EntityModel.EntityQuery&lt;TailSpinPDFversion.Data_Access.ShoppingCart&gt;' could be found (are you missing a using directive or an assembly reference?)&nbsp;&nbsp;&nbsp; c:\\users\\mariond\\documents\\visual studio 2010\\websites\\TailSpinPDFversion\\TailSpinPDFversion\\Classes\\MyShoppingCart.cs&nbsp;&nbsp;&nbsp; 28&nbsp;&nbsp;&nbsp; 42&nbsp;&nbsp;&nbsp; TailSpinPDFversion</p>",
+    "PostedDate": "2011-04-27T09:13:55.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "604014",
+    "ThreadId": "255448",
+    "Html": "<p>Your class is missing a lot of declarations and logic, I would actually do what Joe said earlier.</p>",
+    "PostedDate": "2011-04-28T02:16:31.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

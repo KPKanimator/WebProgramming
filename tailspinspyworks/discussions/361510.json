@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "855866",
+    "ThreadId": "361510",
+    "Html": "\r\n<p>Hi I am an experienced PHP developer and am trying to learn asp.net and stumbled over the TailspinSpyworks tutorial/application.&nbsp; I have downloaded the app and opened it in VSWD2010 and debugged locally and the site runs but if I click into a category\r\n and then click to view a products details, it throws an error, and I get an error message on the &quot;Error.aspx&quot; page that gives a fairly standard error message on line 15 (Label_ErrorMessage.Text = Request[&quot;InnerErr&quot;].ToString();) which I'm not quite sure what\r\n it means! After I click contine debugging the Error.aspx in the browser shows the Error page with querystring:</p>\r\n<p>http://localhost:5080/Error.aspx?InnerErr=Object%20reference%20not%20set%20to%20an%20instance%20of%20an%20object.&amp;Err=Exception%20of%20type%20%27System.Web.HttpUnhandledException%27%20was%20thrown.</p>\r\n<p>And the page content shows the querystring values of:</p>\r\n<p><span id=\"MainContent_Label_ErrorFrom\">Exception of type 'System.Web.HttpUnhandledException' was thrown.</span><br>\r\n<br>\r\n<span id=\"MainContent_Label_ErrorMessage\">Object reference not set to an instance of an object.</span></p>\r\n<p>&nbsp;</p>\r\n<p>Surely if this is being used as a learning aid it should run, in VS without falling over when I try to view a product? If someone could let me know what is causing this error and the fix for it would be appreciated as at the momet, seems like a pretty useless\r\n learning aid.</p>\r\n",
+    "PostedDate": "2012-06-30T17:57:49.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "859440",
+    "ThreadId": "361510",
+    "Html": "<p>&nbsp;</p>\r\n<p>Hello</p>\r\n<p>Did you get any reply.&nbsp; I have tried other apps and they work so whats going on here.&nbsp;</p>\r\n<p>My connection string for the entity data model doesn't work have you got any ideas?</p>",
+    "PostedDate": "2012-07-09T18:54:07.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

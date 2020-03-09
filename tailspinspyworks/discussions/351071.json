@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "819410",
+    "ThreadId": "351071",
+    "Html": "<p>Hello everyone,</p>\n<p>It seems that the latest release of the package was not tested well enough.</p>\n<p>Taking in consideration that these tutorials are for beginners, it is expected that things should run smoothly right out of the box.</p>\n<p>I am trying to learn ASP.NET these days. Taking all tutorials one by one on asp.net website, I finally got to this sample application. Unzipping and running the project in Debug mode on a Visual Studio 2010 SP1 installation (without any NuGet packages and  other gizmos ... we are beginners for God's sake) breaks with the following error in page \"Error.aspx.cs\": \"NullReferenceException\". Inspecting the variables content I see that the source of the error is a \"File not found\". I googled the issue and I got only  complaints about the bad quality of Microsoft tutorials. Of course I could comment the code or add a check for NULL, but that's not how you learn something new. So I installed Elmah using the NuGet. And the only error shown in log was \"File not found\" when browser  is requesting the .... favicon.ico file. Yes! That's the problem. Just add a file named \"favicon.ico\" on the root of the website and problem is solved. Of course is better to also check the \"Request[\"InnerErr\"]\" for NULL.</p>\n<p>If anyone is interested I can detail how to add <a title=\"ELMAH\" href=\"http://code.google.com/p/elmah/\" target=\"_blank\"> ELMAH</a> to the project, but it's not big deal.</p>",
+    "PostedDate": "2012-04-03T13:37:17.037-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "819625",
+    "ThreadId": "351071",
+    "Html": "<p>Hello there Ivan,</p>\r\n<p>Mybad! I believe it was my mistake not to include or omit the call for that file. SORRY you had so much trouble, but I guess it was a good learning experience, right?</p>\r\n<p>Sincerely,</p>\r\n<p>Bas</p>",
+    "PostedDate": "2012-04-04T00:50:16.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "819956",
+    "ThreadId": "351071",
+    "Html": "<p>Hi Bas,</p>\n<p>Your answer is very polite :-) but I like action better. I suppose that the image of the entire ASP.NET team at Microsoft suffers every time this kind of problems occur.</p>\n<p>When can we have a fixed version of the project? I see that is still a lot of activity on this project.</p>",
+    "PostedDate": "2012-04-04T10:25:30.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "820192",
+    "ThreadId": "351071",
+    "Html": "<p>Yes, but this project hasn't been touched for over a year now, and most of us have&nbsp;moved to other projects.&nbsp; However guys like me (as contributors and who do NOT&nbsp;work for Microsoft) are trying to help with the small problems beginners face.</p>\r\n<p>I could see that you are tackling Joe Stagner's version and you should contact him through Codeplex or his website, I believe I have uploaded my VB version which you can find under source code tab, I translated it at the same time Joe issued his version of C#.&nbsp; On the other hand, he works for Microsoft.</p>\r\n<p>So, technicaly, I am only responsible for the code I write, and, as a beginner, you should follow the tutorial provided first and try to debug your work on your own, I believe that is how \"beginners\" learn best.</p>\r\n<p>There have been many bug issues which were endorsed in the Discussion part for this project and the VB version and most of them have been fixed at that time. So, do check out the Discussion section for more information.</p>\r\n<p>You can also find videos by Joe Stagner on ASP.NET website which are very helpful in starting the Tailspinspyworks project.</p>\r\n<p>Happy coding.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-04-04T23:12:27.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

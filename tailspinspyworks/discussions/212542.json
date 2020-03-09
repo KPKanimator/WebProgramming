@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "442552",
+    "ThreadId": "212542",
+    "Html": "<p>In video 1 at 4:57 you are copying code and pasting into the Master page, but you do it so fast I can't tell where you are copying from and pasting to.</p>\r\n<p>It looks like you are just copying and reinserting the code where it was in the Master page.&nbsp; Can you please clarify this step?</p>",
+    "PostedDate": "2010-05-13T08:29:21.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442553",
+    "ThreadId": "212542",
+    "Html": "<p>I'm just replacng the generated code with code we need. The code is shown.</p>",
+    "PostedDate": "2010-05-13T08:31:22.49-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442554",
+    "ThreadId": "212542",
+    "Html": "<p>But where are you getting the code you are copying?</p>\r\n<p>I didn't see that.&nbsp; Did you already have it in your clipboard from another document?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-13T08:32:53.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442557",
+    "ThreadId": "212542",
+    "Html": "<p>yes - it's on the clipboard !</p>",
+    "PostedDate": "2010-05-13T08:37:31.323-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442558",
+    "ThreadId": "212542",
+    "Html": "<p>Which document are you copying it from?</p>\r\n<p>If I want to copy the code, where do I get it?</p>\r\n<p>Is it in another Master page that's included in the project files for download?</p>\r\n<p>_____________________________________________________________________</p>\r\n<p>I went to the downloaded files.&nbsp; Do I need to copy the code from the downloaded Master page and insert that into the project I'm building?</p>\r\n<p>When I try to run the downloaded project I get an error:&nbsp; Could not load type 'TailspinSpyworks.Global'.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-13T08:43:30.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442562",
+    "ThreadId": "212542",
+    "Html": "<p>All of the code is available in the Release or in the Source Repository - or you can e4mail me and I'll send you a zip file.</p>",
+    "PostedDate": "2010-05-13T08:53:18.68-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442564",
+    "ThreadId": "212542",
+    "Html": "<p>OK, thank you.&nbsp; Do you have an idea what is happening from the error I just posted above?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-13T08:55:13.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

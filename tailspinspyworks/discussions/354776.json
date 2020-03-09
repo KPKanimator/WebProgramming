@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "832967",
+    "ThreadId": "354776",
+    "Html": "\r\n<p>First off; Hello!</p>\r\n<p>I am new to the site, but being that I just got hired on as an aspiring ASP.NET coding guy, I figured I'd immerse myself with this tutorial. I am impressed with the depth that this seems to go into, but I am unable to get past copying over the site.master\r\n file.</p>\r\n<p>&nbsp;</p>\r\n<p>What I'm doing, as I assume everyone else is doing:<br>\r\n<br>\r\nClicking 'Site.Master' and replacing the data from there with the data from MasterPage-Template included in the download, and I keep receiving:<br>\r\n<br>\r\n&quot;<span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><strong>Parser Error Message:\r\n</strong>The directive 'master' is unknown.&quot;<br>\r\n<br>\r\nMy boss popped over and suggested I change 'master' to 'Master' but to no avail. I'm assuming this is something stupid, but I haven't been in the programming routine for about 5 years so forgive me if my question is stupid.\r\n<br>\r\n<br>\r\nI, for one, am thinking that this is some sort of configuration error on the Visual Studio side. Oh, I'm using Visual Studio 2010 by the way.<br>\r\n<br>\r\nHere is the full error:<br>\r\n<br>\r\n</p>\r\n<pre>Server Error in '/' Application.\r\nParser Error\r\nDescription: An error occurred during the parsing of a resource required to service this request. Please review the following specific parse error details and modify your source file appropriately.\r\n\r\nParser Error Message: The directive 'master' is unknown.\r\n\r\nSource Error:\r\n\r\nLine 1:  &lt;%@ Master Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeBehind=&quot;Site.Master.cs&quot; Inherits=&quot;TailspinSpyworks.SiteMaster&quot; %&gt;\r\nLine 2:  \r\nLine 3:  \r\n\r\n\r\nSource File: /default.aspx    Line: 1 </pre>\r\n</span>\r\n<p></p>\r\n<p><br>\r\n<br>\r\nThanks for any help! I hope it's something silly.</p>\r\n<p>&nbsp;</p>\r\n<p>-James</p>\r\n",
+    "PostedDate": "2012-05-07T07:08:22.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "833492",
+    "ThreadId": "354776",
+    "Html": "<p>Hey James; well some of us are lucky enough in landing a job. Congrats... Yup! changing to small cap wouldn't resolve the problem.  Try and make sure that your Site.master file is present at the target directory.  I don't think its finding it that's why you are getting that error.  I would highly recommend for all newbies to watch the vids made by Joe Stamger about the project and to copy the whole folder content to your VS2010 project folder and open the project as is first.  Be sure to check and see if the commerce.mdf is not \"Blocked\", if so then unblock it.  Good luck.</p>",
+    "PostedDate": "2012-05-08T08:10:26.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "440649",
+    "ThreadId": "212016",
+    "Html": "<p>Joe,</p>\r\n<p>I've watched a lot of your videos and appreciate the effort you put into them and this tutorial.&nbsp;&nbsp; But, your claim that the reader can use the included code or follow along and build the example from scratch is false.&nbsp; The problem is that you present the database as a &quot;fiat accompli&quot;...just bam, there it is.&nbsp;A beginner isn't going to look at your relationship diagram and figure out how to build the tables, much less the views and stored procedures.&nbsp; I know you aren't trying to write a book and already have an 84 page tutorial, but if you want this to be a follow along tutorial, you either need to provide more detail on the database creation, or&nbsp;clarify that this tutorial is only for beginners to VS 2010 and not beginning developers.</p>\r\n<p>Additionally, the code/tutorial download still includes&nbsp;the mistaken instruction to create an empty website (unless the download button doesn't get the latest version of the&nbsp;tutorial and I'm too new at&nbsp;how things are done on CodePlex).&nbsp;</p>\r\n<p>I appreciate the work you are putting into this, and I understand that it's a work in progress.&nbsp; I've been programming for a long time but the whole web thing passed me by and I'm now playing catch-up.&nbsp; Perhaps my newbishness can help you tune-up the tutorial by being an advocate for people that know even less than I do?</p>\r\n<p>Michael&nbsp;&nbsp;</p>",
+    "PostedDate": "2010-05-08T09:29:52.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "441038",
+    "ThreadId": "212016",
+    "Html": "<p>Hi Michael,</p>\r\n<p>I used to do that and people always told me it was a waste of time because creating the database was &quot;obviouse&quot; by looking at it.</p>\r\n<p>If you're having trouble folling the totrial please feel free to email me and I'll try to help you.</p>\r\n<p>Joe</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-10T05:14:55.707-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "441532",
+    "ThreadId": "212016",
+    "Html": "I agree with Michael.  You seem to be assuming too much from a beginner.  The lack of going through the database creation, etc. is a large hole to fill for a beginner.  Maybe you should make this an intermediate tutorial or else take a few minutes to fill in the gaps.  A beginner will stay with you longer if you don't leave important things out and also take some time to proof your materials.  Can you correct the &quot;Empty&quot; website mistake?  Why assume that people should know you didn't really mean that?  ",
+    "PostedDate": "2010-05-11T08:06:04.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

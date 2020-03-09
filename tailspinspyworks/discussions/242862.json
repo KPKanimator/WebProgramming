@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "553732",
+    "ThreadId": "242862",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Last night i had&nbsp;a problem while debugging the project: 'myEx.InnerException.Message' which i got from 'Server.GetLastError()' was null.</p>\r\n<p>I tried few ways to overcome the problem like deleting that part on the string, but no&nbsp;success.</p>\r\n<p>Does anyone have a solution for my problem?</p>\r\n<p>&nbsp;</p>\r\n<p>P.S. thank you very much TailspinSpyworks for a great tutorial! &nbsp;I learned a lot!</p>\r\n",
+    "PostedDate": "2011-01-22T11:25:50.027-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "553736",
+    "ThreadId": "242862",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>First, are you using the C# version?</p>\r\n<p>Second, try&nbsp;commenting the&nbsp;whole error logic code and run the application again, then&nbsp;let me know what error do you get.</p>\r\n<p>&nbsp;</p>\r\n<p>Later&nbsp;</p>\r\n",
+    "PostedDate": "2011-01-22T11:45:36.68-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "553979",
+    "ThreadId": "242862",
+    "Html": "\r\n<p>Are you working with the latest source ?&nbsp; There was a fixed bug in error handling.</p>\r\n<p>PS Thanks Basba for giving good support for Tainspin !</p>\r\n",
+    "PostedDate": "2011-01-23T09:57:33.257-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "554257",
+    "ThreadId": "242862",
+    "Html": "\r\n<p>No problem Joe, glad to help.</p>\r\n<p>I also think that he is facing the same old bug problem, haven't heard from him yet, hope he got it fixed by checking the fix and / or the latest version.</p>\r\n<p>Later.</p>\r\n",
+    "PostedDate": "2011-01-24T02:29:13.463-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

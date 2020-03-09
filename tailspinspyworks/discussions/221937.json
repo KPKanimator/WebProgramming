@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "474535",
+    "ThreadId": "221937",
+    "Html": "<p>In the AddItem method in MyShoppingCart.cs, I found that the program add a new product into ShoppingCart table. But In the MyShoppingCart.aspx, the Data Source Control gets data from ViewCarts, I can't understand how does ViewCart table get its data? Are there any ralationship between ShoppingCart and ViewCart? Your response will be appreciated.</p>",
+    "PostedDate": "2010-07-29T19:07:54.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "475670",
+    "ThreadId": "221937",
+    "Html": "<p>Hi,</p>\r\n<p>I am not exactly sure about your question but if you double click your edmx file and right click on the page where it shows the tables and choose model browser, there you should be able to figure out how viewcart gets its data.</p>\r\n<p>Hope this was to the point.</p>",
+    "PostedDate": "2010-08-02T16:34:15.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "475802",
+    "ThreadId": "221937",
+    "Html": "<p>Thank you! I know the reason. I treated ViewCart as a table, Actually it's a view.</p>",
+    "PostedDate": "2010-08-03T00:40:45.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "439556",
+    "ThreadId": "211719",
+    "Html": "Guys,\r\n\r\nHave a look on any ASP.NET MVC tutorials include for newbies. Why with ASP.NET MVC tutorials all code use best practices, patterns and extensible, but for ASP.NET Web Forms most tutorials looks like this. Why not to use Repository pattern for data layer ? This will not bring complexity. Why implement all business logic in page code behind controls events but not to move it in to service layer? The scary thing is that tutorial will be used by newbies like example of &quot;best practices&quot; code, because it was published by Microsoft employer.\r\nLet's try to teach beginners to use real best practices on they first steps like Scott Gu doing for example! \r\n\r\nFor now TailspinSpyworks tutorial is a great example of - You should never write a code like this!\r\n\r\nThanks",
+    "PostedDate": "2010-05-05T16:43:16.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439832",
+    "ThreadId": "211719",
+    "Html": "<p>Well paxer, there are many different approaches to problem solving. Not doing this &quot;you're way&quot; does not invalidate the approach. Please feel free to use or not use the sample.</p>\r\n<p>Since it's open source, rather than complain, why not fork the code and show us how you want things done?</p>\r\n<p>Do you really think it's fair to rate a project 1 star becuase I didn't use the data access pattern that you prefer?</p>",
+    "PostedDate": "2010-05-06T06:06:41.55-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439844",
+    "ThreadId": "211719",
+    "Html": "<p>sorry Joe, but o&nbsp;thought that use some data layer pattern today in 2010 is like a&nbsp;standard.&nbsp;&nbsp;The&nbsp;beautifull example of best practices i think was done in Nerd Dinner tutorial. I really hoped to see similar&nbsp;approaches for web forms in the tutorial for beginners. I don't think that it will bring complexity but it will&nbsp;definitely&nbsp; show at least a good direction where to move...</p>",
+    "PostedDate": "2010-05-06T06:25:43.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439857",
+    "ThreadId": "211719",
+    "Html": "<p>The object of .NET's diversity is to NOT force a developer to work the way one person thinks things should be done.</p>\r\n<p>If you read the pdf yyou'll see that the option of a seperate DAL was discussed and defered in th einterest of simplicty.</p>\r\n<p>In an application this size adding a DAL DOES create complexity that will be daunting to some developers since a REAL Data Access Layer requires maeshaling the data from DAL to BAL to UI.</p>\r\n<p>For folks that choose this method MVC is designed for exactly that (which is probably why you refer to liking MVC samples) but this is NOT an MVC sample (and intentionally so).</p>\r\n<p>Not all applications require for do all developers want or need to be constrained by a specific pattern to develop a good application.</p>\r\n<p>As with all samples, if it works for you great, if not, ignore it - bet it seems unfair to stay it stinks because YOU personally would have added a layer of complexity that someone else did not feel was necessary :)</p>\r\n<p>Perhaps you can modify the application to show us how you would have done things your way?</p>",
+    "PostedDate": "2010-05-06T06:59:01.47-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "440098",
+    "ThreadId": "211719",
+    "Html": "<p>with all&nbsp;respect&nbsp;Joe, i have no doubt that you and Scott know much more about approaches and patterns then I. &nbsp;I am just talking that for me this tutorial looks like ... - &nbsp;for example if in the old good times before OOP&nbsp;languages&nbsp;you wrote a similar tutorial but instead of using function and procedures you decided &nbsp;to use GOTO just to avoid complexity :) Simplicity is&nbsp;important but it should be&nbsp;reasonable. I also thought that this tutorial was done like Starter Kit, i mean application which could be used to continue developing and&nbsp;extending, that's another reason why i was&nbsp;disappointed about missed data access layer,&nbsp;because most of beginners will not add this layer, they will just continue in the same style like they have now...</p>\r\n<p>I will do modifications and show it here with explanation why i think it's better.</p>",
+    "PostedDate": "2010-05-06T15:49:16.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "440147",
+    "ThreadId": "211719",
+    "Html": "<p>Ok, like i said i've done some modifications in the source which is think makes this code better.</p>\r\n<p>1) I replaced all logic from all controls events methods eg Page_Event(), &nbsp;btnSubmit_OnClick() etc to separate methods. I've done this becouse we could have a several methods which should be fired on Page_Load for example, and if we will implement all logic in one place this will make code unreadable later.</p>\r\n<p>2) I removed as i think&nbsp;unnecessary&nbsp;try catch blocks, i think that try catch should be used only in the real not predictable situations, for example exactly in the moment of writing to database as we don't know does Sql server up or down, or sending emails as we can't be sure does SMTP works or not. In other cases as i&nbsp;think&nbsp;we need to avoid using try catch and try to handle possible errors manually, as this will bring a big problems when application become big and we need to debug it and find some error.</p>\r\n<p>2) I implemented repository pattern for data access layer and an interface for it. Later&nbsp;someday&nbsp;we can start using IoC&nbsp;framework&nbsp;to make code less coupled, but for now for this first simple version for beginners it's enough. I think that one more class and abstraction layer does not make application not&nbsp;subtable&nbsp;for beginners, but it will show them at least a good direction.&nbsp;</p>\r\n<p>Here the source code of the solution</p>\r\n<p><a title=\"http://dl.dropbox.com/u/4465405/Source.zip\" href=\"http://dl.dropbox.com/u/4465405/Source.zip\">http://dl.dropbox.com/u/4465405/Source.zip</a></p>\r\n<p>All my thoughts this is not a rules of&nbsp;course, &nbsp;this is just my&nbsp;thoughts. We can do our job in any way, but let's try together looking for better ways. And let's&nbsp;discuss &nbsp;and share our thoughts as more as we can&nbsp;especial when we all have one big love to programming and .Net :) And let's&nbsp;double&nbsp;our&nbsp;attention&nbsp;on tutorials as beginners use it like template&nbsp;example&nbsp;for creating own projects.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-06T19:26:43.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "440362",
+    "ThreadId": "211719",
+    "Html": "<p>Thanks for following up with your positive thoughts and hopes for us beginners, paxer!&nbsp; I appreciate the code, too.</p>\r\n<p>It is good to get more viewpoints on how to do stuff and also to collaboratively contribute ideas for improvements.</p>\r\n<p>Jim</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-07T08:05:34.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "533038",
+    "ThreadId": "237630",
+    "Html": "\r\n<p>How can you display Product Review comments in&nbsp;the ListView when they include html markup?</p>\r\n<p>The AjaxControlToolkit HTMLEditor on the AddReview page enables a comment to be &quot;marked up&quot; with style data which gets saved to the database.&nbsp; That &quot;marked up&quot; comment then&nbsp;does not display correctly&nbsp;in the ListView&nbsp;of the ProductDetails\r\n page.&nbsp; Instead it just displays a cell with both the text content and the mark up&nbsp;like so:</p>\r\n<p>&lt;span style=&quot;font-weight: bold&quot;&gt;This product &lt;/span&gt;&lt;span style=&quot;background-color: #ffff00; font-style: italic; font-family: georgia,times new roman,times,serif; font-size: 24pt; text-decoration: underline&quot;&gt;rocks&lt;/span&gt;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-08T11:24:25.613-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "533147",
+    "ThreadId": "237630",
+    "Html": "\r\n<p>I suppose you could turn off request validation and just use the html, but you really shouldn't let untrusted users input markup.</p>\r\n",
+    "PostedDate": "2010-12-08T15:13:47.763-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "533432",
+    "ThreadId": "237630",
+    "Html": "\r\n<p>Yes, I would think you don't want the editor to allow any html.&nbsp; Only way I could find is to use something like this:&nbsp;&nbsp;\r\n<a href=\"http://dotnetperls.com/remove-html-tags\">http://dotnetperls.com/remove-html-tags</a>&nbsp;</p>\r\n<p>which will strip away the tags from the UserComment.Content in the ReviewAddBtn_Click event before the db.SaveChanges()</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;I added the following css and set the editor css to = CustomEditorStyle.&nbsp;&nbsp;it has&nbsp;NO effect in this application ... but&nbsp;it works if I clone it in a different&nbsp; web application.&nbsp;&nbsp; Why?</p>\r\n<p>&nbsp;.CustomEditorStyle<br>\r\n{<br>\r\nBorder-Color:#0066FF; <br>\r\nBorder-Style:solid;<br>\r\nBorder-Width: thick;<br>\r\n}</p>\r\n<p>.CustomEditorStyle .ajax__htmleditor_editor_toptoolbar {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:none;<br>\r\n}</p>\r\n<p>.CustomEditorStyle .ajax__htmleditor_editor_bottomtoolbar { <br>\r\n&nbsp;&nbsp;&nbsp; display:none; <br>\r\n}</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<div id=\"x__mcePaste\" style=\"width:1px; height:1px; overflow:hidden; top:0px; left:-10000px\">\r\n&#65279;</div>\r\n",
+    "PostedDate": "2010-12-09T07:20:56.73-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "534968",
+    "ThreadId": "237630",
+    "Html": "\r\n<p>It works once I cleared the browser cache.</p>\r\n",
+    "PostedDate": "2010-12-13T05:24:10.21-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

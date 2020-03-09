@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "534344",
+    "ThreadId": "238001",
+    "Html": "\r\n<p>I am using VS2010 and I don't hve the template &quot;ASP.NET MVC 2 Empty Web Application.&quot;</p>\r\n<p>Can someone please tell me how to find this template so I can get started.</p>\r\n<p>thanks</p>\r\n<p>Dave</p>\r\n",
+    "PostedDate": "2010-12-11T05:45:20.867-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "534351",
+    "ThreadId": "238001",
+    "Html": "\r\n<p>I think I found my answer:</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c9ba1fe1-3ba8-439a-9e21-def90a8615a9&displaylang=en#SystemRequirements\">http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c9ba1fe1-3ba8-439a-9e21-def90a8615a9&amp;displaylang=en#SystemRequirements</a></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-11T06:08:50.8-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "534355",
+    "ThreadId": "238001",
+    "Html": "\r\n<p>Installed - Still don't see templates ...</p>\r\n<p>Why?<br>\r\nDave</p>\r\n",
+    "PostedDate": "2010-12-11T06:14:04.863-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "534370",
+    "ThreadId": "238001",
+    "Html": "\r\n<p>Looks like you have the old version of the tutorial.</p>\r\n<p>Download the project zip file and work from th 0.8 version of the .pdf instructions.</p>\r\n<p>I'll try to get the doc link changed asap.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-11T07:44:56.527-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

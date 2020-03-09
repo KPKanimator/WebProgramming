@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "439295",
+    "ThreadId": "211657",
+    "Html": "I get this error in Global.asax when running the completed application.\r\nI gave up on trying to build it from scratch since the pdf jumps right into the database without telling you how to add it to the application.",
+    "PostedDate": "2010-05-05T07:49:16.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439358",
+    "ThreadId": "211657",
+    "Html": "<p>To add the database you just grag it into the App_Data folder and create the data model as in the PDF</p>",
+    "PostedDate": "2010-05-05T09:41:07.34-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439360",
+    "ThreadId": "211657",
+    "Html": "Thanks, Joe.\r\nWill you be doing some more videos soon?  This one would be good for a video.  Thanks for all your tutorials.",
+    "PostedDate": "2010-05-05T09:44:01.297-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439362",
+    "ThreadId": "211657",
+    "Html": "<p>Thanks and you bet - I'm working on a whole series to go with the application.</p>",
+    "PostedDate": "2010-05-05T09:47:17.043-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439364",
+    "ThreadId": "211657",
+    "Html": "Cain't wait!!",
+    "PostedDate": "2010-05-05T09:48:38.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

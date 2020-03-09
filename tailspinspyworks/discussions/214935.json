@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "451543",
+    "ThreadId": "214935",
+    "Html": "<p>Hi There,</p>\r\n<p>I tried running the completed project (from the download code) and got the following error message at line 36 of RepeaterItemsList.DataBind() upon running the project (F5) :</p>\r\n<p><strong>The underlying provider failed on Open.</strong></p>\r\n<p>Any ideas how to resolve this. I'm guessing I've fogotten to configure something. I'm using the 2005 version of sql server express to run the local mdf file. As you'll see from that line of code, it is the <strong>Commerce.mdf</strong> file which is the issue as that LINQ-to-Entities statement is in a using block for a <em>CommerceEntities </em>object.</p>",
+    "PostedDate": "2010-06-03T22:21:03.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "454858",
+    "ThreadId": "214935",
+    "Html": "This is a repeatable error. I loaded the project on my laptop and got the same error.\r\n\r\nAlso, trying to get around it, I attempted to attach the Commerce.mdf file to SQL Server 2008. Unfortunately, the file path for that file includes the name &quot;Joe Stagner&quot;, so I cannot attach in that way.\r\n\r\nAny ideas?",
+    "PostedDate": "2010-06-12T22:08:45.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "464864",
+    "ThreadId": "214935",
+    "Html": "<p>I'm getting the same error, Joe?</p>",
+    "PostedDate": "2010-07-08T07:58:29.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "464920",
+    "ThreadId": "214935",
+    "Html": "<p>Looks like I got this working by manually attaching the .mdf to (local)\\SQLExpress using the name Commerce.mdf as specified in the web.config</p>",
+    "PostedDate": "2010-07-08T09:03:27.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "464951",
+    "ThreadId": "214935",
+    "Html": "<p>Hello Joe;</p>\r\n<p>It is working just fine for me, right from the start</p>\r\n<p>if&nbsp;it is ok by you Joe</p>\r\n<p>I am trying to do a VB.Net version of it,&nbsp;but it is going slow because of other activities.</p>\r\n<p>I'll post it up after testing.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-08T09:41:57.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "466213",
+    "ThreadId": "214935",
+    "Html": "DaveMassy,\r\n\r\nTop work! I had to install SQL Server Express 2008. My problem was that I only had SQL Server Express 2005 installed.\r\n\r\nAfter attaching it as you suggested, it works like a charm.\r\n\r\nThanks very much!",
+    "PostedDate": "2010-07-12T03:12:42.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "466365",
+    "ThreadId": "214935",
+    "Html": "<p>Hi all;</p>\r\n<p>It is really a good practice to uninstall all earlier versions and use the web installer</p>\r\n<p>for VWD 2010 which in turn will install a fresh sql server 2008 express.</p>\r\n<p>that is what I used for the Spyworks and it worked just fine as I mentioned before.</p>\r\n<p>I know it is a hastle to uninstall and install stuff but it is worth it.</p>\r\n<p>Although I am working on the VB version but I kinda got stuck with the GetTotal function which I found out that</p>\r\n<p>it is not very flexible as the one in the C# version, well I am gonna try to iterate through the whole cart and add the totals</p>\r\n<p>In VB, however, &nbsp;MyCart can calculate the First , FirstOrDefault values or the Last , LastOrDefault and that only works for one row only.</p>\r\n<p>If any has an idea regarding how to tackle this step in an easier way, then please do give a reply.</p>\r\n<p>I get the feeds from this thread automatically.</p>\r\n<p>Thanx.</p>",
+    "PostedDate": "2010-07-12T08:21:50.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467369",
+    "ThreadId": "214935",
+    "Html": "<p>Well, An update on the progress for the VB version</p>\r\n<p>I finally got the CartTotal to work just as it should, and now tackling the rest of the methods.&nbsp;</p>",
+    "PostedDate": "2010-07-14T10:33:02.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

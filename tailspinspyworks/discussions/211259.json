@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "437921",
+    "ThreadId": "211259",
+    "Html": "<p>Just noticed on page 10 of the pdf it says to create a ASP.NET MVC 2 Empty Web Application instead of an ASP.NET Web Application. The graphic is correct, the instruction is the only problem.</p>",
+    "PostedDate": "2010-05-01T14:33:54.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439246",
+    "ThreadId": "211259",
+    "Html": "<p>Thanks, I've updated the doc in the zip file with several fixes.</p>",
+    "PostedDate": "2010-05-05T05:59:55.773-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

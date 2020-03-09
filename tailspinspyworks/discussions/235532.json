@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "525106",
+    "ThreadId": "235532",
+    "Html": "\r\n<p>I built the app and when I selected the &quot;Communications&quot; link I got the Global.asax.cs/Error.aspx.cs exception error, but the cause of the exception was a &quot;file not found: favicon.ico&quot;.&nbsp; I constructed a favicon.ico file, placed it in the root of the\r\n project and it worked.</p>\r\n",
+    "PostedDate": "2010-11-21T17:22:27.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

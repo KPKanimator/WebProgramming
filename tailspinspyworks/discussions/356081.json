@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "837433",
+    "ThreadId": "356081",
+    "Html": "\r\n<p><span style=\"color:#0000ff\">Hello Basba.</span></p>\r\n<p><span style=\"color:#0000ff\">In your VB version file ReadMeFirst.txt, you have a request to &quot;keep the translation credit intact&quot;.</span></p>\r\n<p><span style=\"color:#0000ff\">I'm not sure of what you mean by that.</span></p>\r\n<p><span style=\"color:#0000ff\">Are you requesting to keep the credits at the bottom of the pages?</span></p>\r\n<p><span style=\"color:#0000ff\">Thanks,</span><br>\r\n<span style=\"color:#0000ff\">Tony</span></p>\r\n",
+    "PostedDate": "2012-05-16T14:42:40.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "837579",
+    "ThreadId": "356081",
+    "Html": "<p>I am a contributor and NOT someone who works for Microsoft.  I made the VB.Net version of this project a while back, so in the ReadMeFirst text file I only ask for people who use my version to give me a little credit and mention that in their project, that's all.  In answering your earlier question, I do not deny that I had had encountered errors while going thru the C# version, but that was a great experience. So if there's anything I can help with regarding my version then let me know, and I will try to answer your mail as soon as possible. How I did it?, I just did the C# first and then when I learned the structure I simply translated it to VB.</p>",
+    "PostedDate": "2012-05-17T02:01:02.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

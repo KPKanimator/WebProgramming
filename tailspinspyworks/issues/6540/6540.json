@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "void Application_Error(object sender, EventArgs e)\n        {\n           Exception myEx =  Server.GetLastError();\n           String RedirectUrlString = \"~/Error.aspx?InnerErr=\" + myEx.InnerException.Message.ToString() + \"&Err=\" + myEx.Message.ToString();\n        }\n \nInner Exception in null sometime.\n \nAlso in Error.aspx need to check InnerErr query string parameter.",
+    "LastUpdatedDate": "2013-02-14T13:23:35.273-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "tailspinspyworks",
+    "ReportedDate": "2010-05-01T20:29:24.883-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error in Global.asax",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6540
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "543848",
+    "ThreadId": "240449",
+    "Html": "\r\n<p>Hi all</p>\r\n<p>According to http://tailspinspyworks.codeplex.com/Thread/View.aspx?ThreadId=214266 there's a VB version. Could someone please post a URL. I've looked all over, googled, et al, but can't find it anywhere. I can't even find 'Patches'. :(</p>\r\n<p>&nbsp;</p>\r\n<p>Many thanks</p>\r\n<p>Ian</p>\r\n",
+    "PostedDate": "2011-01-04T10:44:03.27-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "544310",
+    "ThreadId": "240449",
+    "Html": "\r\n<p>Hello Ian,</p>\r\n<p><a href=\"http://tailspinspyworks.codeplex.com/SourceControl/PatchList.aspx\">http://tailspinspyworks.codeplex.com/SourceControl/PatchList.aspx</a></p>\r\n<p>it should still be there, along with two other that weren't complete but if you wanted the complete one then pick 6398.</p>\r\n<p>Enjoy.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-01-05T06:39:58.39-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "544318",
+    "ThreadId": "240449",
+    "Html": "\r\n<p>Hi</p>\r\n<p>&nbsp;</p>\r\n<p>Brilliant. Many thanks for that. I was looking for a 'patches' link on the download page for the project. I didn't realise that 'patches' was generic and elsewhere. :)</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks again</p>\r\n<p>&nbsp;</p>\r\n<p>Ian</p>\r\n",
+    "PostedDate": "2011-01-05T06:45:47.087-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "561530",
+    "ThreadId": "240449",
+    "Html": "\r\n<p>that's good, ur welcome</p>\r\n",
+    "PostedDate": "2011-02-06T10:38:25.04-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "573186",
+    "ThreadId": "240449",
+    "Html": "<p>Hey Basba i've checked your VB version of MyTailspinSpyWorks. It was great! you did a great job.</p>",
+    "PostedDate": "2011-02-28T04:23:17.303-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "573564",
+    "ThreadId": "240449",
+    "Html": "<blockquote style=\"padding-bottom: 0px; font-style: italic; margin: 0.25em 1em 0px; padding-left: 0.25em; padding-right: 0.25em; padding-top: 0px; border: #ccc 0.1em solid;\"><strong>khuram1usa wrote:</strong><br />\r\n<p>Hey Basba i've checked your VB version of MyTailspinSpyWorks. It was great! you did a great job.</p>\r\n</blockquote>\r\n<p><br />You're welcome, I'm glad you liked it, any questions just post it here.</p>",
+    "PostedDate": "2011-02-28T15:49:04.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574119",
+    "ThreadId": "240449",
+    "Html": "<p>Hey Basba thanks for reply. I wana ask you something. Can i make an actual website in Visual studio 2010 using SQL express. I don't have SQL 2008 or any other version install in my computer. What are security issues if i use that??</p>",
+    "PostedDate": "2011-03-01T14:58:14.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574395",
+    "ThreadId": "240449",
+    "Html": "<blockquote style=\"padding-bottom: 0px; font-style: italic; margin: 0.25em 1em 0px; padding-left: 0.25em; padding-right: 0.25em; padding-top: 0px; border: #ccc 0.1em solid;\"><strong>khuram1usa wrote:</strong><br />\n<p>Hey Basba thanks for reply. I wana ask you something. Can i make an actual website in Visual studio 2010 using SQL express. I don't have SQL 2008 or any other version install in my computer. What are security issues if i use that??</p>\n</blockquote>\n<p><br />There should rise no problems for you to create a website with VS 2010, and besides if you are using the full version of VS then at the same time of installation, it has already installed an sql server for you which you can access from inside VS itself, unless you would want to manage the DB server itself, then you should install the Sever Management which you can find at Microsoft downloads for SQL server&nbsp;management&nbsp;2008.</p>\n<p>Hope this was helpfull.</p>",
+    "PostedDate": "2011-03-02T05:38:59.84-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "0",
+    "Name": "TailspinSpyworks-v0.8",
+    "DevelopmentStatus": "Stable",
+    "Description": "ASP.NET 4 ECommerce Application",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-12T15:41:16.597-07:00",
+    "Files": [
+      {
+        "Id": "5d7dae74-1bd5-4047-ad21-d703ab8283a0",
+        "FileName": "TailspinSpyworks-v0.8.zip",
+        "Url": "./0/5d7dae74-1bd5-4047-ad21-d703ab8283a0",
+        "Type": "Application",
+        "UploadDate": "2010-05-03T06:39:32.107-07:00"
+      },
+      {
+        "Id": "838dc399-fa94-4c36-84af-140606dde364",
+        "FileName": "Tailspin Spyworks - Tutorial - v0.8.pdf",
+        "Url": "./0/838dc399-fa94-4c36-84af-140606dde364",
+        "Type": "Documentation",
+        "UploadDate": "2010-05-12T15:41:16.363-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "TailspinSpyworks-v0.9",
+    "DevelopmentStatus": "Stable",
+    "Description": "Contains a number of bug fixes and additional tutorial steps as well as complete database implementation details.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-11-15T07:25:02.497-08:00",
+    "Files": [
+      {
+        "Id": "e675a328-6692-4fae-a3e8-5ce125e58ebe",
+        "FileName": "TailspinSpyworks-v0.9.zip",
+        "Url": "./1/e675a328-6692-4fae-a3e8-5ce125e58ebe",
+        "Type": "Source Code",
+        "UploadDate": "2010-11-15T07:20:31.033-08:00"
+      },
+      {
+        "Id": "23372c33-0a67-4a3b-b0ec-63a6de71cdf1",
+        "FileName": "Building Tailspin Spyworks.pdf",
+        "Url": "./1/23372c33-0a67-4a3b-b0ec-63a6de71cdf1",
+        "Type": "Application",
+        "UploadDate": "2010-11-15T07:20:31.38-08:00"
+      }
+    ]
+  }
+]

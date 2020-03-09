@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "889891",
+    "ThreadId": "387987",
+    "Html": "\r\n<p>I am working on a project that incorporates elements of the Tailspin Spyworks application into it. For the most part, I am following the tutorial exactly. The only things I've changed are certain file paths (&quot;/products/store/addtocart.aspx&quot; instead of &quot;addtocart.aspx&quot;),\r\n the project name, and the master page.</p>\r\n<p>In the page &quot;AddToCart.aspx.cs&quot;, when I entered in the following code, it gave me the error:</p>\r\n<p>&quot;The type or namespace name &quot;MyShoppingCart&quot; could not be found (Are you missing a using directive or an assembly reference?)&quot;</p>\r\n<p>I am on the newer side of C# programming, but have done web development for a number of years. Any help would be greatly appreciated.</p>\r\n<p>This is the entire code:</p>\r\n<div style=\"background-color:white; color:black\">\r\n<pre>using System;\r\nusing System.Collections.Generic;\r\nusing System.Linq;\r\nusing System.Web;\r\nusing System.Web.UI;\r\nusing System.Web.UI.WebControls;\r\nusing System.Diagnostics;\r\n\r\nnamespace JumpStitch\r\n{\r\n    public partial class AddToCart : System.Web.UI.Page\r\n    {\r\n        protected void Page_Load(object sender, EventArgs e)\r\n        {\r\n            string rawId = Request.QueryString[&quot;ProductID&quot;];\r\n            int productId;\r\n            if (!String.IsNullOrEmpty(rawId) &amp;&amp; Int32.TryParse(rawId, out productId))\r\n            {\r\n                <span style=\"color:#ff0000\">MyShoppingCart</span> usersShoppingCart = new <span style=\"color:#ff0000\">MyShoppingCart</span>();\r\n                String cartId = usersShoppingCart.GetShoppingCartId();\r\n                usersShoppingCart.AddItem(cartId, productId, 1);\r\n            }\r\n            else\r\n            {\r\n                Debug.Fail(&quot;ERROR : We should never get to AddToCart.aspx without a ProductId.&quot;);\r\n                throw new Exception(&quot;ERROR : It is illegal to load AddToCart.aspx without setting a ProductId.&quot;);\r\n            }\r\n            Response.Redirect(&quot;/products/store/MyShoppingCart.aspx&quot;);\r\n        }\r\n    }\r\n}\r\n</pre>\r\n</div>\r\n",
+    "PostedDate": "2012-07-24T12:20:39.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "891097",
+    "ThreadId": "387987",
+    "Html": "<p>Hello Max, it should not be a problem unless you kept the inheritence path as is in the .aspx file, it needs the correct path for the class file .cs, I am sure that you can see that it couldn't find the class. check it and let me know.  The code you presented seems fine.</p>",
+    "PostedDate": "2012-07-25T05:04:06.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "892415",
+    "ThreadId": "387987",
+    "Html": "<p>That did indeed fix the problem, but now the GetShoppingCartId and AddItem bits are flashing the same error.</p>",
+    "PostedDate": "2012-07-27T13:20:32.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893168",
+    "ThreadId": "387987",
+    "Html": "<p>hello again Max, I'm kinda a little busy fixing my car, sorry for the belated reply. I have made a VB version of Joe's C#, so if you liked you can download my version which is fully functional, many have used it. But it is good that you fixed the problem, I will need to look at your class code and check it out before I can give you my opinion regarding the new error codes.</p>",
+    "PostedDate": "2012-07-30T10:18:47.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893978",
+    "ThreadId": "387987",
+    "Html": "<p>I've fixed that issue, but, once again, have another. Basically, if I go to a product page (ProductDetails.aspx), and then click \"add to cart\", it passes to the MyShoppingCart.aspx page, but doesn't display anything in an actual \"Shopping Cart\", let alone display a table.</p>\r\n<p>I think it is an issue with the AddToCart.aspx.cs page. Here is the code for it:</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">using</span> System;\r\n<span style=\"color: blue;\">using</span> System.Collections.Generic;\r\n<span style=\"color: blue;\">using</span> System.Linq;\r\n<span style=\"color: blue;\">using</span> System.Web;\r\n<span style=\"color: blue;\">using</span> System.Web.UI;\r\n<span style=\"color: blue;\">using</span> System.Web.UI.WebControls;\r\n<span style=\"color: blue;\">using</span> System.Diagnostics;\r\n\r\n<span style=\"color: blue;\">namespace</span> JumpStitch\r\n{\r\n    <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">partial</span> <span style=\"color: blue;\">class</span> AddToCart : System.Web.UI.Page\r\n    {\r\n        <span style=\"color: blue;\">protected</span> <span style=\"color: blue;\">void</span> Page_Load(<span style=\"color: blue;\">object</span> sender, EventArgs e)\r\n        {\r\n            <span style=\"color: blue;\">string</span> rawId = Request.QueryString[<span style=\"color: #a31515;\">\"ProductID\"</span>];\r\n            <span style=\"color: blue;\">int</span> productId;\r\n            <span style=\"color: blue;\">if</span> (!String.IsNullOrEmpty(rawId) &amp;&amp; Int32.TryParse(rawId, <span style=\"color: blue;\">out</span> productId))\r\n            {\r\n                JumpStitch.Classes.MyShoppingCart usersShoppingCart = <span style=\"color: blue;\">new</span> JumpStitch.Classes.MyShoppingCart();\r\n                String cartId = usersShoppingCart.GetShoppingCartId();\r\n                usersShoppingCart.AddItem(cartId, productId, 1);\r\n            }\r\n            <span style=\"color: blue;\">else</span>\r\n            {\r\n                Debug.Fail(<span style=\"color: #a31515;\">\"ERROR: We should never get to AddToCart.aspx without a product Id.\"</span>);\r\n                <span style=\"color: blue;\">throw</span> <span style=\"color: blue;\">new</span> Exception(<span style=\"color: #a31515;\">\"ERROR: It is illegal to load AddToCart.aspx without setting a Product Id.\"</span>);\r\n            }\r\n            Response.Redirect(<span style=\"color: #a31515;\">\"MyShoppingCart.aspx\"</span>);\r\n        }\r\n    }\r\n}\r\n\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-07-31T19:38:51.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "895014",
+    "ThreadId": "387987",
+    "Html": "\r\n<p>Ok Max,try this</p>\r\n<p><span style=\"color:blue\">using</span> System;<br>\r\n<span style=\"color:blue\">using</span> System.Collections.Generic;<br>\r\n<span style=\"color:blue\">using</span> System.Linq;<br>\r\n<span style=\"color:blue\">using</span> System.Web;<br>\r\n<span style=\"color:blue\">using</span> System.Web.UI;<br>\r\n<span style=\"color:blue\">using</span> System.Web.UI.WebControls;<br>\r\n<span style=\"color:blue\">using</span> System.Diagnostics;<br>\r\n<br>\r\n<span style=\"color:blue\">namespace</span> JumpStitch<br>\r\n{<br>\r\n<span style=\"color:blue\">public</span> <span style=\"color:blue\">partial</span> <span style=\"color:blue\">\r\nclass</span> AddToCart : System.Web.UI.Page<br>\r\n{<br>\r\n<span style=\"color:blue\">protected</span> <span style=\"color:blue\">void</span> Page_Load(<span style=\"color:blue\">object</span> sender, EventArgs e)<br>\r\n{<br>\r\n<span style=\"color:blue\">if</span> (Request.Parms[&quot;productId&quot;] != null)<br>\r\n{<br>\r\nJumpStitch.Classes.MyShoppingCart usersShoppingCart = <span style=\"color:blue\">new</span> JumpStitch.Classes.MyShoppingCart();<br>\r\nString cartId = usersShoppingCart.GetShoppingCartId();<br>\r\nusersShoppingCart.AddItem(cartId, Int32.Parse(Request.Parms[&quot;productId&quot;]) , 1);<br>\r\n}<br>\r\n<span style=\"color:blue\">else</span><br>\r\n{<br>\r\nDebug.Fail(<span style=\"color:#a31515\">&quot;ERROR: We should never get to AddToCart.aspx without a product Id.&quot;</span>);<br>\r\n<span style=\"color:blue\">throw</span> <span style=\"color:blue\">new</span> Exception(<span style=\"color:#a31515\">&quot;ERROR: It is illegal to load AddToCart.aspx without setting a Product Id.&quot;</span>);<br>\r\n}<br>\r\nResponse.Redirect(<span style=\"color:#a31515\">&quot;MyShoppingCart.aspx&quot;</span>);<br>\r\n}<br>\r\n}<br>\r\n}</p>\r\n",
+    "PostedDate": "2012-08-03T00:34:24.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

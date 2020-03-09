@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "575450",
+    "ThreadId": "248422",
+    "Html": "\r\n<p>My guru Joe Stanger's C# version bug fix for&nbsp;shopping cart&nbsp; applies also for the VB version I posted.&nbsp;</p>\r\n<p>Change the &quot;Item Total&quot; template as follows to display the cents digits when choosing an item with a rounded dollar price.</p>\r\n<p>It concerns a small correctiion in the .aspx file.</p>\r\n<p>&lt;ItemTemplate&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%# (Convert.ToDouble(Eval(&quot;Quantity&quot;)) * Convert.ToDouble(Eval(&quot;UnitCost&quot;))).ToString(&quot;N2&quot;)%&gt;<br>\r\n&lt;/ItemTemplate&gt;</p>\r\n<p>Thanx Joe.</p>\r\n",
+    "PostedDate": "2011-03-04T01:43:01.987-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "837304",
+    "ThreadId": "248422",
+    "Html": "<p><span style=\"color: #0000ff;\">Hello Joe.</span></p>\r\n<p><span style=\"color: #0000ff;\">Can you tell me which .aspx file this gets changed in?</span></p>\r\n<p><span style=\"color: #0000ff;\">Thanks,</span><br /><span style=\"color: #0000ff;\">Tony</span></p>",
+    "PostedDate": "2012-05-16T10:06:47.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

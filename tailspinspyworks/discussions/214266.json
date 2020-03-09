@@ -1,0 +1,154 @@
+[
+  {
+    "Id": "448890",
+    "ThreadId": "214266",
+    "Html": "<p>HI,<br><br>Will you be doing a VB version of the Website?</p>",
+    "PostedDate": "2010-05-28T15:36:08.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "449102",
+    "ThreadId": "214266",
+    "Html": "<p>I had not planned to.</p>\r\n<p>-joe</p>",
+    "PostedDate": "2010-05-29T12:59:55.907-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "450714",
+    "ThreadId": "214266",
+    "Html": "<p>I just listened to your podcast &quot;Misfit Geek Podcast - Episode #2 Does VB have a Future?&quot;.&nbsp;&nbsp; In light if Microsoft's decision to continue to support VB, can you please do a VB version?&nbsp; Please?</p>",
+    "PostedDate": "2010-06-02T10:03:50.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451237",
+    "ThreadId": "214266",
+    "Html": "At this point I just don't have the time to do a VB version. \r\n\r\nI could use a translation tool if some of you folks would be willing to clean it up and debug after the automated translation. ",
+    "PostedDate": "2010-06-03T08:29:31.743-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451275",
+    "ThreadId": "214266",
+    "Html": "yeah i will give it a go!",
+    "PostedDate": "2010-06-03T09:34:15.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451290",
+    "ThreadId": "214266",
+    "Html": "<p>I'm trying to. but I keep getting errors.&nbsp; I've never programmed in C# so I don't know where to begin to try to fix them.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-03T10:01:11.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451822",
+    "ThreadId": "214266",
+    "Html": "Yeah, i don't know C# either, so the VB would be a great help to me and to a lot of other beginners.\r\n",
+    "PostedDate": "2010-06-04T11:31:30.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "455685",
+    "ThreadId": "214266",
+    "Html": "<p>Well, I've made a decent start, but I'm stuck on a problem.&nbsp; Can someone help me with this?&nbsp; It's probably a dumb error, but I'm not seeing it.&nbsp; In MyShoppingCart.vb, I'm getting errors for Session(CartId) and User.Identity.Name.&nbsp; The error message is: 'Session' is not declared.&nbsp; It may be inaccessible due to its protection level or 'User' is not declared.&nbsp; It may be inaccessible due to its protection level.&nbsp; I don't see why this would be a problem.&nbsp; Are sessions handled differently in VS 2010?</p>",
+    "PostedDate": "2010-06-15T08:37:16.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "463927",
+    "ThreadId": "214266",
+    "Html": "<p>Hej Joe, and fellow swipers;</p>\r\n<p>I know C# and I would like to give it a go and clean the it up, 'cause I know VB too, I use both and I watch both versions of&nbsp;Joe's work.</p>\r\n<p>Just send me the link to the translated one.</p>",
+    "PostedDate": "2010-07-06T12:52:42.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467371",
+    "ThreadId": "214266",
+    "Html": "<p>VB version update</p>\r\n<p>I finally got the CartTotal to work as it should and now working on the next step</p>\r\n<p>Cart Updates.</p>",
+    "PostedDate": "2010-07-14T10:34:39.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467374",
+    "ThreadId": "214266",
+    "Html": "<p>Hello everyone,</p>\r\n<p>I have just finished the VB version of MyTailSpinSpyWorks and it works fine until submitting the the final order,</p>\r\n<p>the whole application is ready, and ready.</p>\r\n<p>Thanx again for everything</p>",
+    "PostedDate": "2010-07-14T10:37:10.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467518",
+    "ThreadId": "214266",
+    "Html": "<p>Hi,</p>\r\n<p>I've just uploaded my VB version and it is being evaluated by CodePlex,</p>\r\n<p>SO, go ahead and try mine.</p>",
+    "PostedDate": "2010-07-14T17:26:30.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467556",
+    "ThreadId": "214266",
+    "Html": "<p>Basba.. Thanks 4 converting the code from C# to VB.</p>\r\n<p>But.. Where can i upload the VB version?</p>",
+    "PostedDate": "2010-07-14T21:16:09.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467626",
+    "ThreadId": "214266",
+    "Html": "<p>Hi msj and all,</p>\r\n<p>Click on the SourceCode tab on this page, then on Patches and you will find the source code download under my user name.</p>\r\n<p>remember to read the ReadMe text file first.</p>\r\n<p>Enjoy,</p>\r\n<p>ANy problem just reply to this post.</p>\r\n<p>BTW, I did not do any commenting in the source code, that you can do yourslef</p>\r\n<p>&nbsp;</p>\r\n<p>P.S..   This translation goes as far as Joe's tutorials, and I am still working on the rest of the application like reviews and so forth&lt;/&gt;",
+    "PostedDate": "2010-07-15T01:18:09.26-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468012",
+    "ThreadId": "214266",
+    "Html": "<p>Thanks Joe for the code and the videos.</p>\r\n<p>Basba, Thanks for the port!!</p>",
+    "PostedDate": "2010-07-15T17:32:03.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468081",
+    "ThreadId": "214266",
+    "Html": "<p>IslandTalker, you're welcome</p>\r\n<p>and ofcourse thanx goes out to Joe for those informative vids</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-15T23:03:51.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469266",
+    "ThreadId": "214266",
+    "Html": "<p>Hello girls 'n' boys,</p>\r\n<p>I have finished translating the whole and Complete application to VB.Net. It was built, debugged fine,</p>\r\n<p>and I ran it and it did everything it should do with out any problems.</p>\r\n<p>Just goto the sourcecode page and download the patch.</p>\r\n<p>Unzip it and open the solution in your VS or VWD.</p>\r\n<p>PLEASE, do read the ReadMeFirst text file. Thanx.</p>\r\n<p>If you had any question then do reply to this post.</p>\r\n<p>Enjoy.</p>\r\n<p>BTW in order to get the contact form to works, you'd have to go into the webconfig file and change the SMTP name to your ISP name and your credentials instead of mine and please do not give mine to anyoneelse, I know I should've remembered to do that before I uploaded it.</p>\r\n<p>I highly recommend that you implement validation controls to that form.</p>",
+    "PostedDate": "2010-07-19T15:28:47.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469270",
+    "ThreadId": "214266",
+    "Html": "Thanks!",
+    "PostedDate": "2010-07-19T15:35:21.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470088",
+    "ThreadId": "214266",
+    "Html": "<p>An update to VB version</p>\r\n<p>Ok the whole thing is finished , built, debugged and packed.</p>\r\n<p>I believe we have a complete VB version now.</p>\r\n<p>Please do read the README file.</p>\r\n<p>Enjoy.</p>",
+    "PostedDate": "2010-07-21T00:09:42.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

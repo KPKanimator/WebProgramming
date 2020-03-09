@@ -1,0 +1,258 @@
+[
+  {
+    "Id": "450130",
+    "ThreadId": "214596",
+    "Html": "<p>Just started with the first video. I built the project, added the images, but when I try to attach the COMMERCE.mdf and COMMERCE_LOG.ldf to my database I get the following:</p>\r\n<p>Unable to open the physical file &quot;D:\\Development\\MyTailspinSpyworks\\MyTailspinSpyworks\\App_Data\\Commerce.mdf&quot;. Operating system error 5 &quot;5(Access is denied)&quot;. (.Net SQLClient Data Provider)</p>\r\n<p>If I can't download&nbsp;the associated database files can I get some scripts and data to build the database?</p>\r\n<p>Thanks in advance!</p>",
+    "PostedDate": "2010-06-01T09:07:03.97-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "450179",
+    "ThreadId": "214596",
+    "Html": "<p>Did you try correncting the permissions issue ?</p>",
+    "PostedDate": "2010-06-01T10:49:08.667-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "450403",
+    "ThreadId": "214596",
+    "Html": "<p>No. Where do I find information on&nbsp;&quot;&nbsp;correncting the permissions issue&quot;?</p>",
+    "PostedDate": "2010-06-01T21:38:14.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451239",
+    "ThreadId": "214596",
+    "Html": "<p>That's a HUGE question.</p>\r\n<p>You could start here. <a href=\"http://blogs.msdn.com/b/sqlexpress/archive/2006/11/22/connecting-to-sql-express-user-instances-in-management-studio.aspx\">http://blogs.msdn.com/b/sqlexpress/archive/2006/11/22/connecting-to-sql-express-user-instances-in-management-studio.aspx</a></p>\r\n<p>Try starting Visual Studio as admin and see if that works and if so we'll know that your regular account lacks file permissions.</p>",
+    "PostedDate": "2010-06-03T08:32:42.63-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451751",
+    "ThreadId": "214596",
+    "Html": "<p>Running VS 2010 and SQL 2008 as administrator worked like a charm.</p>\r\n<p>Of course I'm not sure why since my account type is administrator that I have to rum applications as administrator makes any sense, but the more complicated thay make the more they needs us and the more they'll have to pay us! Now I have to figure out why and what I can do to not to have to run things as administrator on my own machine when I am an administartor.</p>\r\n<p>Thanks for the help!</p>",
+    "PostedDate": "2010-06-04T07:58:09.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468216",
+    "ThreadId": "214596",
+    "Html": "<p>I am also having trouble accessing the database would it be possible to have the scripts to enable us to create the database from scratch</p>",
+    "PostedDate": "2010-07-16T06:54:21.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468217",
+    "ThreadId": "214596",
+    "Html": "<p>It is telling me that the version downloaded does not match with the version loaded on my visual studio 2010 version</p>",
+    "PostedDate": "2010-07-16T06:55:40.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468219",
+    "ThreadId": "214596",
+    "Html": "<p>Are you using SQL 2008 ?</p>",
+    "PostedDate": "2010-07-16T06:58:06.883-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468285",
+    "ThreadId": "214596",
+    "Html": "\r\nYes visual studio 2010 with sql 2008<br> <br>\r\n<hr id=stopSpelling>\r\nFrom: [email removed]<br>To: [email removed]<br>Date: Fri, 16 Jul 2010 06:58:13 -0700<br>Subject: Re: Commerce Database [tailspinspyworks:214596]<br><br>\r\n\r\n\r\nFrom: JoeStagner<br>\r\n<div id=ecxThreadNotificationPostBody>\r\nAre you using SQL 2008 ?<br></div>\r\n<div id=ecxThreadNotificationFooter>\r\nRead the <a>full discussion online</a>.<br>\r\nTo add a post to this discussion, reply to this email (<a>tailspinspyworks@discussions.codeplex.com</a>)<br>\r\nTo start a new discussion for this project, email <a>tailspinspyworks@discussions.codeplex.com</a><br>\r\nYou are receiving this email because you subscribed to this discussion on CodePlex. You can <a>unsubscribe</a> on CodePlex.com.<br>\r\nPlease note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com<br></div> \t\t \t   \t\t  <br><hr>Get a free e-mail account with Hotmail. <a href=\"http://clk.atdmt.com/UKM/go/197222280/direct/01/\">Sign-up now.</a>",
+    "PostedDate": "2010-07-16T10:08:53.703-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468953",
+    "ThreadId": "214596",
+    "Html": "<p>Just a quick note,</p>\r\n<p>While going through the vids, I noticed that one of the view&nbsp;modules in the commerce db is misspelled</p>\r\n<p>it is named&nbsp;&quot;vewOrderDetails&quot; instead of &quot;viewOrderDertails&quot;, it is missing the &quot;I&quot; in view.</p>\r\n<p>among a few other small tidbits which can be easily corrected, that actually gave a lot of wiered and unrelsted errors at times.</p>\r\n<p>Still working on the rest of the VB version, sorry its taking so long but I'm kinda busy with other projects.</p>",
+    "PostedDate": "2010-07-19T04:35:31.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469545",
+    "ThreadId": "214596",
+    "Html": "<p>It is telling me that the version I am trying to download is version 655 and my server is version 612 and there is no downgrade path supported</p>",
+    "PostedDate": "2010-07-20T04:03:07.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469628",
+    "ThreadId": "214596",
+    "Html": "<p>The database is SQL2008 - you can insall SQL 2008 Express from <a href=\"http://www.microsoft.com/express/Database/\">http://www.microsoft.com/express/Database/</a></p>\r\n<p>-Joe</p>",
+    "PostedDate": "2010-07-20T04:57:29.34-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470131",
+    "ThreadId": "214596",
+    "Html": "\r\nI have done a complete restore of visual studio 2010 and installed the sqlserver 2008 express and it is giving me the following error&quot; Failed to generate a user instance of SQL Server due to a failure in starting the process for the user instance. The connection will be closed.&quot; What am I doing wrong<br> <br>\r\n<hr id=stopSpelling>\r\nFrom: [email removed]<br>To: [email removed]<br>Date: Tue, 20 Jul 2010 04:57:33 -0700<br>Subject: Re: Commerce Database [tailspinspyworks:214596]<br><br>\r\n\r\n\r\nFrom: JoeStagner<br>\r\n<div id=ecxThreadNotificationPostBody>\r\nThe database is SQL2008 - you can insall SQL 2008 Express from <a href=\"http://www.microsoft.com/express/Database/\">http://www.microsoft.com/express/Database/</a><br>\r\n-Joe<br></div>\r\n<div id=ecxThreadNotificationFooter>\r\nRead the <a href=\"http://tailspinspyworks.codeplex.com/Thread/View.aspx?ThreadId=214596&ANCHOR#Post469628\">full discussion online</a>.<br>\r\nTo add a post to this discussion, reply to this email (<a href=\"mailto:tailspinspyworks@discussions.codeplex.com?subject=[tailspinspyworks:214596]\">tailspinspyworks@discussions.codeplex.com</a>)<br>\r\nTo start a new discussion for this project, email <a href=\"mailto:tailspinspyworks@discussions.codeplex.com\">tailspinspyworks@discussions.codeplex.com</a><br>\r\nYou are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/thread/unsubscribe/214596\">unsubscribe</a> on CodePlex.com.<br>\r\nPlease note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com<br></div> \t\t \t   \t\t  <br><hr>Get a new e-mail account with Hotmail - Free. <a href=\"http://clk.atdmt.com/UKM/go/197222280/direct/01/\">Sign-up now.</a>",
+    "PostedDate": "2010-07-21T02:15:23.65-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470268",
+    "ThreadId": "214596",
+    "Html": "<p>Barthoid!</p>\r\n<p>I am getting the same error, I believe it is the JoeStagner user instance,</p>\r\n<p>and that we can change through attaching the database to SQL managemnet studio and do the changes there.</p>\r\n<p>I believe that &quot;Beginners&quot; should now about this pitfall and that if they try to copy the application to their local IIS wwwroot folder and</p>\r\n<p>converting it to Application and try to run &iacute;t, then they will face these problems with the DB.</p>\r\n<p>I am working on the VB version and I will try the C# version on my webroot when I am finished.</p>\r\n<p>BTW go to VB discussion for the VB version, but remeber not to copy it to IIS webroot,</p>\r\n<p>It will not work.</p>",
+    "PostedDate": "2010-07-21T05:52:55.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470286",
+    "ThreadId": "214596",
+    "Html": "basba is correct and you can assign your own WIndeows account permissions to the database in SQL Manager ",
+    "PostedDate": "2010-07-21T06:21:45.483-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470419",
+    "ThreadId": "214596",
+    "Html": "Hi Joe,\r\n\r\nThanx, but I got a tiny problem and I hope you'ld have a suggestion,\r\nI have recreted the whole application from scratch in VB but now not as a file project but\r\nas an http: application in VWD 2010\r\n\r\nHowever the build is perfect, I don't seem to get it to give a decent error that I can play with nor\r\nwill it show up in the Iexplorer, and its teasing the heck out of me,\r\nI looked at the debugger, inner exceptions, logs everything and no clue.\r\n\r\n\r\n\r\nhere is the build output\r\n\r\nBuilding directory '/mystore/Styles/'.\r\n\r\nBuilding directory '/mystore/Controls/'.\r\n\r\nBuilding directory '/mystore/Scripts/'.\r\n\r\nBuilding directory '/mystore/'.\r\n\r\n\r\nValidation Complete\r\n\r\n========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========\r\n\r\n\r\nAny ideas?\r\n",
+    "PostedDate": "2010-07-21T09:28:00.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470540",
+    "ThreadId": "214596",
+    "Html": "\r\nThanks, I must be a total beginner how would I go about changing it in the management studio.<br> <br>\r\n<hr id=stopSpelling>\r\nFrom: [email removed]<br>To: [email removed]<br>Date: Wed, 21 Jul 2010 05:53:03 -0700<br>Subject: Re: Commerce Database [tailspinspyworks:214596]<br><br>\r\n\r\n\r\nFrom: basba<br>\r\n<div id=ecxThreadNotificationPostBody>\r\nBarthoid!<br>\r\nI am getting the same error, I believe it is the JoeStagner user instance,<br>\r\nand that we can change through attaching the database to SQL managemnet studio and do the changes there.<br>\r\nI believe that &quot;Beginners&quot; should now about this pitfall and that if they try to copy the application to their local IIS wwwroot folder and<br>\r\nconverting it to Application and try to run ít, then they will face these problems with the DB.<br>\r\nI am working on the VB version and I will try the C# version on my webroot when I am finished.<br>\r\nBTW go to VB discussion for the VB version, but remeber not to copy it to IIS webroot,<br>\r\nIt will not work.<br></div>\r\n<div id=ecxThreadNotificationFooter>\r\nRead the <a href=\"http://tailspinspyworks.codeplex.com/Thread/View.aspx?ThreadId=214596&ANCHOR#Post470268\">full discussion online</a>.<br>\r\nTo add a post to this discussion, reply to this email (<a href=\"mailto:tailspinspyworks@discussions.codeplex.com?subject=[tailspinspyworks:214596]\">tailspinspyworks@discussions.codeplex.com</a>)<br>\r\nTo start a new discussion for this project, email <a href=\"mailto:tailspinspyworks@discussions.codeplex.com\">tailspinspyworks@discussions.codeplex.com</a><br>\r\nYou are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/thread/unsubscribe/214596\">unsubscribe</a> on CodePlex.com.<br>\r\nPlease note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com<br></div> \t\t \t   \t\t  <br><hr>Get a free e-mail account with Hotmail. <a href=\"http://clk.atdmt.com/UKM/go/197222280/direct/01/\">Sign-up now.</a>",
+    "PostedDate": "2010-07-21T12:02:23.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471003",
+    "ThreadId": "214596",
+    "Html": "<p>Ok Barthoid,</p>\r\n<p>I will write a step by step soon</p>",
+    "PostedDate": "2010-07-22T05:57:19.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471006",
+    "ThreadId": "214596",
+    "Html": "<div id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl30_BodyDiv\">Hi Joe, Thanx,</div>\r\n<div>but I&nbsp;have a tiny problem and I hope you'ld have a suggestion for me,</div>\r\n<div>&nbsp;I have recreted the whole application from scratch in VB but now not as a file project but&nbsp;AS an http: application in VWD 2010</div>\r\n<div>However the build is perfect, I don't seem to get it to give a decent error except for</div>\r\n<div>A first chance exception of type 'System.Web.HttpException' occurred in System.Web.dll</div>\r\n<div>a system.web.httpUnhandles exception message which is totaly Greek to me.</div>\r\n<div>It&nbsp;simply won't show&nbsp;in the Iexplorer, but it starts it,</div>\r\n<div>&nbsp;its teasing the heck out of me, I looked at the debugger, stack and locals and inner exceptions (nothing), logs everything and no clue.</div>\r\n<div>here is the build output and it is fine</div>\r\n<div>&nbsp;Building directory '/mystore/Styles/'.</div>\r\n<div>Building directory '/mystore/Controls/'.</div>\r\n<div>Building directory '/mystore/Scripts/'.</div>\r\n<div>Building directory '/mystore/'.</div>\r\n<div>Validation Complete ========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========</div>\r\n<div>So Any ideas?</div>\r\n<div>I'd apprecite it.</div>",
+    "PostedDate": "2010-07-22T06:04:44.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471014",
+    "ThreadId": "214596",
+    "Html": "<p>Hi Basba,</p>\r\n<p>Can you send me a zip file with the solutin and I'll give it a look ?</p>\r\n<p>Joe</p>",
+    "PostedDate": "2010-07-22T06:29:27.867-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471880",
+    "ThreadId": "214596",
+    "Html": "<p>Hi Joe;</p>\r\n<p>I have resolved the problem, there was nothing in the code or anything that I have changed in the DB ownership,</p>\r\n<p>It simply was the freaging IIS. Though the ASPNET.MDF does give an error code when trying to create a user online.</p>\r\n<p>Any how, you are welcome to look at the application if you still wanted to I will zip it and upload it&nbsp;as a personal patch to misfits.</p>\r\n<p>It was nice of you to ask,</p>\r\n<p>and thanx again for those vids along with the PDF tutorial I was aable to make a VB web app that can run</p>\r\n<p>on localhost.</p>\r\n<p>Truly</p>\r\n<p>Bas</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-23T17:03:28.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471882",
+    "ThreadId": "214596",
+    "Html": "<p><br>Hello again and sorry about the belated reply,</p>\r\n<p><strong>Instance and Database</strong></p>\r\n<p>Check out this link</p>\r\n<p><a href=\"http://decipherinfosys.wordpress.com/2009/01/29/no-surface-area-configuration-tool-in-sql-server-2008/\">http://decipherinfosys.wordpress.com/2009/01/29/no-surface-area-configuration-tool-in-sql-server-2008/</a></p>\r\n<p>Then do the following</p>\r\n<p><span style=\"text-decoration:underline\"><strong>Application Pool Identity is your problem.</strong></span></p>\r\n<p><span style=\"text-decoration:underline\"><strong></strong></span><br>If you changed the DB or have deleted the ownership and created your own ownership do the following to your IIS and this shoould solve your instance problem, it is just that Microsoft do not tell folks about the problem with their IIS and the new 4.0 development</p>\r\n<p><br>Run the Internet Information Services (IIS) Manager tool.&nbsp; This tool can be accessed either from the Administrative start menu, or by typing &quot;inetmgr&quot; in the Windows Start--&gt;Search textbox and selecting the inetmgr tool. <br>In the left-hand pane of the IIS Manager tool expand the machine node. <br>Click on the &quot;Application Pools&quot; node so that the application pools display in the main window of the management tool. <br>If you are troubleshooting an ASP.NET 2.0/3.0/3.5 application select the &quot;DefaultAppPool&quot; application pool.&nbsp; For ASP.NET v4 select the &quot;ASP.NET v4.0&quot; application pool. <br>Right-click on the selected application pool and choose &quot;Advanced Settings&quot; <br>In the &quot;Advanced Settings&quot; dialog box find the category called &quot;Process Model&quot;.&nbsp; The first row in the category will be the &quot;Identity&quot; row. <br>Click on the &quot;Identity&quot; row and then click on the small button that shows on the right-hand side of the value cell.&nbsp; The button displays the text &quot;&hellip;&quot; <br>A dialog box called &quot;<span style=\"text-decoration:underline\"><strong>Application Pool Identity</strong></span>&quot; will popup.&nbsp; Within that dialog box there are two radio buttons.&nbsp; Make sure the first radio button titled &quot;Built-in Account&quot; is selected. <br>In the dropdown box below the radio button choose &quot;Network Service&quot; for the identity. <br>Click &quot;Ok&quot; to close out the &quot;Application Pool Identity&quot; dialog box. <br>Click &quot;Ok&quot; to close out the &quot;Advanced Settings&quot; dialog box. <br>At this point the changes to the application pool identity will have been saved to IIS 7.5's configuration store.</p>\r\n<p>P.S. you can also set it to <strong>Local System </strong>and that will allow the creation of new users.</p>\r\n<p>Truly</p>\r\n<p>Bas</p>",
+    "PostedDate": "2010-07-23T17:06:02.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472679",
+    "ThreadId": "214596",
+    "Html": "<p>Hello,</p>\r\n<p>Please check the previous post for detailed info, and make sure that your server instance name is spelled correct ir Is the correct one, like .\\SQLEXPRESS or .\\MSSQL or just plain dot &quot;.&quot;, like in local default instance.</p>\r\n<p>You may also have to omit the User instance = true from the Commerce.mdb connection string and add a localsqlserver connection with the user instance = true with the aspnetdb.mdf connection, and make sure that the ApplicationServices has one too for the membership in the web.config which should have already made one for you when you have set up the users and memebership, but check it anyway. here is a working example</p>\r\n<p>&lt;connectionStrings&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;remove name=&quot;LocalSqlServer&quot; /&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add name=&quot;LocalSqlServer&quot; connectionString=&quot;data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true&quot; providerName=&quot;System.Data.SqlClient&quot; /&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add name=&quot;ApplicationServices&quot; connectionString=&quot;data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\aspnetdb.mdf;User Instance=true&quot; providerName=&quot;System.Data.SqlClient&quot; /&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add name=&quot;CommerceEntities&quot; connectionString=&quot;metadata=res://*/App_Code.Commerce_EDM.csdl|res://*/App_Code.Commerce_EDM.ssdl|res://*/App_Code.Commerce_EDM.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Commerce.mdf;Integrated Security=True;MultipleActiveResultSets=True&amp;quot;&quot; providerName=&quot;System.Data.EntityClient&quot; /&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/connectionStrings&gt;</p>\r\n<p>&nbsp;</p>\r\n<p>Hope this will help fix the problem, I tried it and it works.</p>",
+    "PostedDate": "2010-07-26T08:33:21.29-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476339",
+    "ThreadId": "214596",
+    "Html": "<div class=WordSection1><p class=MsoNormal>I have re installed Microsoft SQL Server 2008 and tried to copy across the commerce.mdf files again and i still get the error message the version you are trying to copy is version 655,  my server supports version 612 and earlier, and a downgrade path is not supported. What Am I doing wrong. </p></div>",
+    "PostedDate": "2010-08-04T02:45:41.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476527",
+    "ThreadId": "214596",
+    "Html": "Nothing,\r\n\r\nI don't think there is anything wrong with your SQL server, just make sure the server instance name is the same as in the connection string in web.config, and do me a favour here, use your windows explorer and navigate to the folder where you have your commerce.db at, and right click on it and tell me if it says BLOCKED.\r\n\r\nYou have to follow the instructiions in my previous posts.",
+    "PostedDate": "2010-08-04T10:08:51.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476855",
+    "ThreadId": "214596",
+    "Html": "\r\nTo be honest I have given up I tried to reinstall sqlserver and I cannot even create a data base from scratch now the f#~king bag of <a href=\"mailto:S*@t\">S*@t</a> program, <br> <br>\r\n<hr id=stopSpelling>\r\nFrom: [email removed]<br>To: [email removed]<br>Date: Thu, 5 Aug 2010 04:22:26 -0700<br>Subject: Re: Commerce Database [tailspinspyworks:214596]<br><br>\r\n\r\n\r\n\r\nFrom: basba<br>\r\n<div id=ecxThreadNotificationPostBody>Nothing, I don't think there is anything wrong with your SQL server, just make sure the server instance name is the same as in the connection string in web.config, and do me a favour here, use your windows explorer and navigate to the folder where you have your commerce.db at, and right click on it and tell me if it says BLOCKED. You have to follow the instructiions in my previous posts.</div>\r\n<div id=ecxThreadNotificationFooter>\r\nRead the <a href=\"http://tailspinspyworks.codeplex.com/Thread/View.aspx?ThreadId=214596&ANCHOR#Post476527\">full discussion online</a>.<br>\r\nTo add a post to this discussion, reply to this email (<a href=\"mailto:tailspinspyworks@discussions.codeplex.com?subject=[tailspinspyworks:214596]\">tailspinspyworks@discussions.codeplex.com</a>)<br>\r\nTo start a new discussion for this project, email <a href=\"mailto:tailspinspyworks@discussions.codeplex.com\">tailspinspyworks@discussions.codeplex.com</a><br>\r\nYou are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/thread/unsubscribe/214596\">unsubscribe</a> on CodePlex.com.<br>\r\nPlease note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com<br></div> \t\t \t   \t\t  ",
+    "PostedDate": "2010-08-05T05:53:57.107-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476994",
+    "ThreadId": "214596",
+    "Html": "<p>I know how you feel at times I felt like throwing my laptop in the dumpster, but I hear ya.</p>\r\n<p>At one time I had to re-install a fresh Windows OS and then re-install all my programs from scratch.</p>\r\n<p>Good luck.</p>",
+    "PostedDate": "2010-08-05T09:40:19.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476995",
+    "ThreadId": "214596",
+    "Html": "basba - could you emil me directly ?\r\n\r\nThanks \r\nJoe ",
+    "PostedDate": "2010-08-05T09:44:23.653-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476997",
+    "ThreadId": "214596",
+    "Html": "\r\n<div>Hey Joe, long time.</div>\r\n<div> </div>\r\n<div>Wasup?</div>\r\n<div> </div>\r\n<div>Bas</div>\r\n<div> </div>\r\n<div style=\"font:10pt Tahoma\">\r\n<div><br></div>\r\n<div style=\"background:#f5f5f5\">\r\n<div style=\"font-color:black\"><b>From:</b> [email removed] </div>\r\n<div><b>Sent:</b> Thursday, August 05, 2010 6:44 PM</div>\r\n<div><b>To:</b> [email removed] </div>\r\n<div><b>Subject:</b> Re: Commerce Database \r\n[tailspinspyworks:214596]</div></div></div>\r\n<div><br></div>\r\n\r\n\r\n<p>From: JoeStagner</p>\r\n<div id=ThreadNotificationPostBody>basba - could you emil me directly ? Thanks \r\nJoe </div>\r\n",
+    "PostedDate": "2010-08-05T09:47:06.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "477002",
+    "ThreadId": "214596",
+    "Html": "<p>Did you get my PM ?</p>",
+    "PostedDate": "2010-08-05T10:09:09.533-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "477004",
+    "ThreadId": "214596",
+    "Html": "<p>No,, could you send it again...</p>",
+    "PostedDate": "2010-08-05T10:13:22.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "477012",
+    "ThreadId": "214596",
+    "Html": "<p>COUld you email me at <a href=\"mailto:Joe.Stagner@Microsoft.com\">Joe.Stagner@Microsoft.com</a> ?</p>",
+    "PostedDate": "2010-08-05T10:25:00.153-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

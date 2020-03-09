@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "439473",
+    "ThreadId": "211697",
+    "Html": "<p>I got a build error when I try to run debug the original code that I just downloaded.&nbsp; Please help.</p>\r\n<p>&nbsp;</p>\r\n<p><span>&nbsp;\r\n<h1>Server Error in '/TailspinSpyworks' Application. \r\n<hr size=1>\r\n</h1>\r\n<h2><em>Parser Error</em></h2>\r\n</span><span style=\"font-family:Arial, Helvetica, Geneva, SunSans-Regular, sans-serif\"><strong>Description: </strong>An error occurred during the parsing of a resource required to service this request. Please review the following specific parse error details and modify your source file appropriately. <br><br><strong>Parser Error Message: </strong>Could not load type 'TailspinSpyworks.SiteMaster'.<br><br><strong>Source Error:</strong> <br><br></span></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre><span style=\"color:#ff0000\">Line 1:  &lt;%@ Master Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeBehind=&quot;Site.master.cs&quot; Inherits=&quot;TailspinSpyworks.SiteMaster&quot; %&gt;\r\n</span>Line 2:  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;\r\nLine 3:  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;</pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial, Helvetica, Geneva, SunSans-Regular, sans-serif\"><br><strong>Source File: </strong>/TailspinSpyworks/Styles/Site.master<strong> &nbsp;&nbsp; Line: </strong>1 <br><br></span></p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>\r\n<p><span>&nbsp;</span></p>",
+    "PostedDate": "2010-05-05T13:12:10.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "439834",
+    "ThreadId": "211697",
+    "Html": "<p>Is the masterpage there ?</p>\r\n<p>Make sure your download was not corrupt and build the project before you run.</p>\r\n<p>Joe</p>",
+    "PostedDate": "2010-05-06T06:07:59.393-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "719314",
+    "ThreadId": "211697",
+    "Html": "<p>I got this error. actually namespace name TailspinSpyworks contains an underscore between these two words. Open the Site.Master.cs file you will notice that namespace name has an underscore between two words.&nbsp;</p>\r\n<p>Place an underscore between word Tailspin and Spyworks. it will work fine</p>",
+    "PostedDate": "2012-01-02T02:05:06.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

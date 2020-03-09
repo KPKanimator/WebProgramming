@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "446683",
+    "ThreadId": "213651",
+    "Html": "<p>Hi there,</p>\r\n<p>I am going through the tailspin application and I have come what I believe to be an oversight. &nbsp;On page 55 of the documentation, A method is meant to be added to the MyShoppingCart Class. However, This method is not being called anywhere in the application as far as I can see. Any advice on the best place to call this? The method checks the DB to see if there is already a shopping cart with for the registered user, if there is then the two carts are merged. As it is now, this is not working as it is meant to. Thanks.</p>",
+    "PostedDate": "2010-05-24T08:40:57.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "474122",
+    "ThreadId": "213651",
+    "Html": "I suggest that you'd better tell us the method's name. If it is the MigrateCart method, it is just attach the cart items with the user. Anonymous guests may put products into the cart. But when they are going to check out, the checkout method calls MyShoppingCarts's GetShoppingCartId() and the method returned the current user's name. if you don't write the MigrateCart function,you may can't get your checkout list on your checkout page.",
+    "PostedDate": "2010-07-29T02:25:37.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "474377",
+    "ThreadId": "213651",
+    "Html": "<p>Kate is absolutly correct !!</p>",
+    "PostedDate": "2010-07-29T11:06:50.313-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "516558",
+    "ThreadId": "213651",
+    "Html": "\r\n<p>The name of the method is the title of the post. I am referring to the &quot;LoggedIn&rdquo; event handler. in the Login.aspx (code behind) page.</p>\r\n",
+    "PostedDate": "2010-11-03T10:10:49.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

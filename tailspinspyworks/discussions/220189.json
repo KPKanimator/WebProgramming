@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "469766",
+    "ThreadId": "220189",
+    "Html": "<p>Joe,</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm trying to extend and learn more from your sample by taking the .MDF file and converting it to a SQL Server 2008 Database Project in Visual Studio. Once I've created the Database Projects and I import the tables and schema I attempt to build the database and am getting the following error:</p>\r\n<p>&nbsp;C:\\SpyWorks\\SpyWorks.Commerce\\sql\\debug\\SpyWorks.Commerce.sql(76,0): Error SQL01268: .Net SqlClient Data Provider: Msg 15401, Level 16, State 1, Line 1 Windows NT user or group 'JHSW500B\\Joe Stagner' not found. Check the name again.<br>&nbsp;&nbsp;&nbsp; An error occurred while the batch was being executed.<br>&nbsp;&nbsp; Done executing task &quot;SqlDeployTask&quot; -- FAILED.<br>&nbsp; Done building target &quot;DspDeploy&quot; in project &quot;SpyWorks.Commerce.dbproj&quot; -- FAILED.<br> Done executing task &quot;CallTarget&quot; -- FAILED.<br>Done building target &quot;DBDeploy&quot; in project &quot;SpyWorks.Commerce.dbproj&quot; -- FAILED.<br>Done building project &quot;SpyWorks.Commerce.dbproj&quot; -- FAILED.</p>\r\n<p>Where is 'JHSW500B\\Joe Stagner' set and how can I change this account?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-20T09:07:34.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469852",
+    "ThreadId": "220189",
+    "Html": "<p>Try opening it in SQL Manager when logged in as admin via Windows Authentication</p>\r\n<p>-Joe</p>",
+    "PostedDate": "2010-07-20T11:50:49.65-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "475408",
+    "ThreadId": "220189",
+    "Html": "<p>Remember to &quot;Unblock&quot; the database before migrating it to your project, and as Joe said open it with the manager and make sa as owner among Network sevices and you among the admins. Then save it, detach it, open it again and if you wanted take the privilage of ownership away from JHS\\Joe Stagner. But the most important thing is to omit the user instance from the Commerce.MDF connection string and add a localsqlserver connection in your web.config.</p>\r\n<p>Check out the strings in the CommerceDB thread.</p>\r\n<p>Hope this will help.</p>",
+    "PostedDate": "2010-08-02T05:40:12.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

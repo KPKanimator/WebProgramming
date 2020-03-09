@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "533547",
+    "ThreadId": "237768",
+    "Html": "\r\n<p>Why do changes in the Site.css not carry over to the web pages when&nbsp;THIS application runs ?&nbsp; I changed the hover color but the left column flyover stays as red ?</p>\r\n<p>e.g.&nbsp; I made this change in Site.css</p>\r\n<p><strong><span style=\"color:#ff0000\">FROM:</span></strong></p>\r\n<p>#leftColumn a:hover<br>\r\n{<br>\r\ncolor: Red;<br>\r\nfont-weight: bold;<br>\r\nfont-style: italic;<br>\r\ntext-decoration: none;<br>\r\n}</p>\r\n<p><span style=\"color:#0000ff\"><strong>TO:</strong></span></p>\r\n<p>#leftColumn a:hover<br>\r\n{<br>\r\ncolor: blue;<br>\r\n}</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-09T10:50:22.17-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "533702",
+    "ThreadId": "237768",
+    "Html": "\r\n<p>Try clearing your cache and refreshing the page.</p>\r\n",
+    "PostedDate": "2010-12-09T16:48:47.457-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "534967",
+    "ThreadId": "237768",
+    "Html": "\r\n<p>Thanks, that did the trick.&nbsp; It also&nbsp;allowed me to change how AddReview editor looks by adding the following styles to hide the top and bottom toolbar:</p>\r\n<p>.CustomEditorStyle<br>\r\n{<br>\r\nBorder-Color:#0066FF; <br>\r\nBorder-Style:solid;<br>\r\nBorder-Width: thick;<br>\r\n}</p>\r\n<p>.CustomEditorStyle .ajax__htmleditor_editor_toptoolbar {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:none;<br>\r\n}</p>\r\n<p>.CustomEditorStyle .ajax__htmleditor_editor_bottomtoolbar { <br>\r\n&nbsp;&nbsp;&nbsp; display:none; <br>\r\n}</p>\r\n",
+    "PostedDate": "2010-12-13T05:23:13.613-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

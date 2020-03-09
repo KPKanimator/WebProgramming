@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "671144",
+    "ThreadId": "272429",
+    "Html": "\r\n<p>hello every one this is syed imran i am web developer i work on .net technologies this project is&nbsp;interesting&nbsp;and i am interested in contributing ideas and code to this project</p>\r\n<p>&nbsp;</p>\r\n<p>this is my second year in coding web application in on.net technologies and &nbsp;want to learn more</p>\r\n<p>i am working to develop user friendly interface for administration to</p>\r\n<p>add products ,</p>\r\n<p>add category,</p>\r\n<p>delete product,</p>\r\n<p>edit products</p>\r\n<p>without logging in user can check there order details just by typing the order No<span style=\"color:#008000\">(for this i have created a page with search box where user enter order no and he gets the order details)</span></p>\r\n<p>later we will add payment gateway (paypal)</p>\r\n<p>i want all people help and contribution of code and idea to &nbsp;build this administration module</p>\r\n<p>waiting for reply from project members ,developers,followers&nbsp;</p>\r\n<p>chat with me on <span style=\"color:#008000\">imranunicorn@gmail.com</span></p>\r\n<p>thank you have a nice day</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-09-13T06:22:37.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "671501",
+    "ThreadId": "272429",
+    "Html": "<p>I think it would be best if you would issue a \"Check order status\" alfa-numeric no, for ordering customers after they submit theri order, that should relieve them from the hastle of logging in everytime (which I don't thin it should be) they wanted to check their order summary.</p>\r\n<p>But I would like to the code behind that search page.</p>\r\n<p>Thanx</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-09-13T22:04:47.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "672176",
+    "ThreadId": "272429",
+    "Html": "<p>hello basba how you doing</p>\r\n<p>thanks for replying</p>\r\n<p>check order status is good instead of check order details</p>\r\n<p>here what i am trying to do is checking details of products the customer purchased not the status &nbsp; &nbsp; but it is good idea to include status like \"product delivelere\"\"inprogress\".etc</p>\r\n<p>i also have created a page where admin can add new products &nbsp;and edit existing procducts and detele products using gridview and formview</p>\r\n<p>soon i am going to upload this project on my website&nbsp;</p>\r\n<p>but i have a problem uploading products image</p>\r\n<p>i want all people help and contribution of code and idea to &nbsp;build this administration module</p>\r\n<p>waiting for reply from project members ,developers,followers&nbsp;</p>\r\n<p>chat with me on&nbsp;<span>imranunicorn@gmail.com</span></p>\r\n<p>thank you have a nice day</p>",
+    "PostedDate": "2011-09-15T03:35:44.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "680050",
+    "ThreadId": "272429",
+    "Html": "<p>Hello syedimran</p>\r\n<p>&nbsp;</p>\r\n<p>I have checked out your order status or details pages but it did not work with my tailspin, instead I will keep the simple code that I have created which I will be glad to show you if you liked to see it.</p>\r\n<p>I only made one page where the customer (not logged in) can enter the order number he/she received after order submission, and see the status of their order from the Orders table. I included some simple logic to it too.</p>\r\n<p>Later I will try to work on Joining info from other tables, when I get some free time that is.</p>\r\n<p>However I would like to look at your edit, insert, delete products page, it should go in a seperate Admin folder with all security implementations in mind, I would guess.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-10-04T15:55:29.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "680184",
+    "ThreadId": "272429",
+    "Html": "<p>hello basba</p>\r\n<p>when you open the project run it and &nbsp;click on the top menu \" check your order \" you will see a search box and a button&nbsp;</p>\r\n<p>type any three number 123or 127</p>\r\n<p>you will see the order details</p>\r\n<p>&nbsp;</p>\r\n<p>to access add product page &nbsp;open project in vsweb developer and in admin folder you can see add product page click on it and it will ask for password&nbsp;</p>\r\n<p>user name: &nbsp;syedimran ,, ,passowrd: imran123</p>\r\n<p>you will see a grid view list &nbsp;where you can edit ,update,delete product</p>\r\n<p>and in the last column in gridview click on details it will open separate page with complete producct details there also you can add ,edit ,update ,delete products</p>\r\n<p>i am facing problem when upload image i need help on uploading products image</p>\r\n<p>&nbsp;</p>\r\n<p>i will upload the project again</p>\r\n<p>have a look &nbsp;and reply me back</p>\r\n<p>waiting for your reply</p>\r\n<p>thank you</p>",
+    "PostedDate": "2011-10-05T01:59:10.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "680593",
+    "ThreadId": "272429",
+    "Html": "<p>Hello Syed</p>\r\n<p>I took a quick look at it, and yet it is very ordinary, anyhow I couldn't see any \"Insert\" or \"New\" command any where, was that something you were trying to implement.</p>\r\n<p>With regards to the images, you would hvae to change the eval paths in the productList and productDetails aspx files in order to get the images to show in the default page,</p>\r\n<p>I believe the paths goes into the Cataloge folder and uses the images folder and its Thumbs subfolder.</p>\r\n<p>With the Edit command you could set the path for the image you want, but still have to copy a thumbnail into the folder for the correct path in productsList to find.</p>\r\n<p>Personally I did not want to play with this project when I faced the hasle of the \"Insert\" methode and I just postponed the work on that to free my free time for MVC3 projects.</p>\r\n<p>It does look like the code I started with a long time ago, but my way about it is to do a codebehind for the whole process, the same way it is done for the shopping cart Add and Update</p>\r\n<p>I think it is best that way.</p>\r\n<p>One advise, it is best if you use the entity connection instead of the Datasets and Objects, that will save you a lot of time.</p>\r\n<p>But let me know if you have found a way around to Inserting new items.&nbsp; I have not checked the DB for relations or association yet and I think it is ok since it updates OK.</p>\r\n<p>Later</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-10-05T17:09:15.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

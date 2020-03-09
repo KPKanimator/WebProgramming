@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "565285",
+    "ThreadId": "245810",
+    "Html": "<p>Hello,</p>\n<p>I just started with ASP.NET&nbsp; and thank to <span>Joe Stagner</span> for a great tutorial webforms application TailspinSpyworks.</p>\n<p>I have a problem with TailspinSpyworks when I try hosting that webforms in IIS on my computer. I don't know exactly where that error in application. I have an picture to explain that error.</p>\n<p><a href=\"http://i51.tinypic.com/fa97h2.jpg\">Picture 1</a></p>\n<p>In picture, content of listview I comment because when I comment that syntax, that application run successfully in IIS. but the other hands, when content of listview I not comment, that application not run in IIS.</p>\n<p>That error like this..</p>\n<p><a href=\"http://i56.tinypic.com/2zjmloh.jpg\">Error picture</a></p>\n<p>I just follow third video tutorial and I run with visual studio 2010 that no error, run successfull .</p>\n<p>can anyone help me? I appreciate your help.</p>\n<p><span id=\"x_result_box\" lang=\"en\"><span title=\"Click for alternate translations\">sorry</span><span title=\"Click for alternate translations\">,</span> <span title=\"Click for alternate translations\">if</span> <span title=\"Click for alternate translations\"> my explanation</span> <span title=\"Click for alternate translations\">difficult</span> <span title=\"Click for alternate translations\">to understand..</span></span></p>\n<p>&nbsp;</p>\n<p><span lang=\"en\"><span title=\"Click for alternate translations\">Regard, Darmawan<br /> </span></span></p>",
+    "PostedDate": "2011-02-12T19:05:29.057-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

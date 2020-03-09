@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "504385",
+    "ThreadId": "230182",
+    "Html": "<p>I receive this error on the CheckOut.aspx page when I hit submit:</p>\r\n<p>&nbsp;</p>\r\n<p>&quot;There is already an open DataReader associated with this Command which must be closed first.&quot;</p>\r\n<p>Anybody have any ideas?&nbsp; I have not made any modifications to the application.</p>",
+    "PostedDate": "2010-10-08T10:18:19.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

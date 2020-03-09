@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "605375",
+    "ThreadId": "255843",
+    "Html": "\r\n<p>I should have mentioned this much earlier, but for those who are starting with the Tailspin tutorials, you should be aware that in the commerce.mdf db file under Views</p>\r\n<p>it says VewOrderDetails where it is missing the &quot;i&quot;, there a couple of ways to deal with that or you can just keep as is but just in case it might give you some errors as you go through the project</p>\r\n<p>When you get to page 7-8 in the tutorial where you should add the commerce.mdf file to your project, then go ahead and add it but do not debug the project before doing the following</p>\r\n<p>- double click the .mdf file</p>\r\n<p>- expand the Views</p>\r\n<p>- right click the views and Add a new view</p>\r\n<p>- Add OrderDetails and Products tables</p>\r\n<p>- double click on the misspelled view (VewOrderDetails)</p>\r\n<p>- copy the Select statement from the misspelled one and paste it in the new view instead of the one already there</p>\r\n<p>- save the new view with a correct spelling (ViewOrderDetails)</p>\r\n<p>- Execute the Select statment by clicking on the exclamation mark in the tools bar or you can use the right click methode</p>\r\n<p>- if it runs ok then close both views</p>\r\n<p>Now you can delete the old view if you wished</p>\r\n<p>And remember to check the Pluralize or Singularize generated object names box when addin an ADO entity</p>\r\n<p>&nbsp;</p>\r\n<p>I hope this was helpful to some.</p>\r\n",
+    "PostedDate": "2011-04-30T17:21:28.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

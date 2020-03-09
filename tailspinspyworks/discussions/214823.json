@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "451063",
+    "ThreadId": "214823",
+    "Html": "<p>Thank you very much for all the great work on TailspinSpyworks.</p>\r\n<p>I have been following the video tutorial series on <a href=\"http://www.asp.net/web-forms/samples/tailspin-spyworks\">http://www.asp.net/web-forms/samples/tailspin-spyworks</a>.&nbsp;&nbsp;<br>In these video there are various references to future videos for this project, as yet these have not come online.</p>\r\n<p>Will there be any new videos, and if so, when do you expect these will be uploaded to ASP.net?</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2010-06-03T01:18:41.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451189",
+    "ThreadId": "214823",
+    "Html": "<p>I've done a bunch more (and am continuing the series),</p>\r\n<p>I'll check on what the publishing hold is.</p>",
+    "PostedDate": "2010-06-03T06:49:27.543-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "451194",
+    "ThreadId": "214823",
+    "Html": "<p>Thanks for the quick answer. Looking forward to the other videos.</p>",
+    "PostedDate": "2010-06-03T06:58:26.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "465698",
+    "ThreadId": "214823",
+    "Html": "<p>Hi Joe;</p>\r\n<p>Just a little remark&nbsp;, for the bigginers</p>\r\n<p>I had followed your videos instructions step by step great videos and hopefully we'll see more of that good stuff.</p>\r\n<p>Thanx again</p>\r\n<p>P.S. Those guys who made the intellisense are almost Gods in my view.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-09T18:06:46.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "467478",
+    "ThreadId": "214823",
+    "Html": "<p>Great and instructive</p>\r\n<div id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl18_BodyDiv\">\r\n<p>Just a quick note though,</p>\r\n<p>While going through the vids, I noticed that one of the view&nbsp;modules in the commerce db is misspelled</p>\r\n<p>it is named&nbsp;&quot;vewOrderDetails&quot; instead of &quot;viewOrderDertails&quot;, it is missing the &quot;I&quot; in view.</p>\r\n<p>among a few other small tidbits which can be easily corrected, that actually gave a lot of wiered and unrelsted errors at times.</p>\r\n</div>",
+    "PostedDate": "2010-07-14T14:38:11.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

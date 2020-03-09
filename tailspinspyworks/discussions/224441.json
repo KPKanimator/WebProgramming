@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "483361",
+    "ThreadId": "224441",
+    "Html": "<p>I'm getting this error when trying to view any of the pages in a browser:</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Parser Error</p>\r\n&lt;!--          body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;}           p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}          b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}          H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }          H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }          pre {font-family:&quot;Lucida Console&quot;;font-size: .9em}          .marker {font-weight: bold; color: black;text-decoration: none;}          .version {color: gray;}          .error {margin-bottom: 10px;}          .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }          --&gt;\r\n<p><span>\r\n<h2><em>Parser Error</em></h2>\r\n</span><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><strong>Description: </strong>An error occurred during the parsing of a resource required to service this  request. Please review the following specific parse error details and modify  your source file appropriately. <br><br><strong>Parser Error Message: </strong>Could not  load type 'TailspinSpyworks.Global'.<br><br><strong>Source Error:</strong> <br><br> </span></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<pre><span style=\"color:red\">Line 1:  &lt;%@ Application Codebehind=&quot;Global.asax.cs&quot; Inherits=&quot;TailspinSpyworks.Global&quot; Language=&quot;C#&quot; %&gt;\r\n</span></pre>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"> <br><strong>Source File: </strong>/global.asax<strong> &nbsp;&nbsp; Line: </strong>1 <br><br> \r\n<hr size=1>\r\n<strong>Version Information:</strong>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET  Version:4.0.30319.1 </span></p>\r\n&lt;!--  [HttpException]: Could not load type &#39;TailspinSpyworks.Global&#39;.    at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)    at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)    at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData) [HttpParseException]: Could not load type &#39;TailspinSpyworks.Global&#39;.    at System.Web.UI.TemplateParser.ProcessException(Exception ex)    at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding) [HttpParseException]: Could not load type &#39;TailspinSpyworks.Global&#39;.    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)    at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)    at System.Web.UI.TemplateParser.ParseInternal()    at System.Web.UI.TemplateParser.Parse()    at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()    at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)    at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()    at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()    at System.Web.Compilation.ApplicationBuildProvider.GetGlobalAsaxBuildResult(Boolean isPrecompiledApp)    at System.Web.Compilation.BuildManager.CompileGlobalAsax()    at System.Web.Compilation.BuildManager.EnsureTopLevelFilesCompiled() [HttpException]: Could not load type &#39;TailspinSpyworks.Global&#39;.    at System.Web.Compilation.BuildManager.ReportTopLevelCompilationException()    at System.Web.Compilation.BuildManager.EnsureTopLevelFilesCompiled()    at System.Web.Compilation.BuildManager.CallAppInitializeMethod()    at System.Web.Hosting.HostingEnvironment.Initialize(ApplicationManager appManager, IApplicationHost appHost, IConfigMapPathFactory configMapPathFactory, HostingEnvironmentParameters hostingParameters, PolicyLevel policyLevel, Exception appDomainCreationException) [HttpException]: Could not load type &#39;TailspinSpyworks.Global&#39;.    at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)    at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)    at System.Web.HttpRuntime.ProcessRequestInternal(HttpWorkerRequest wr) --&gt;",
+    "PostedDate": "2010-08-22T17:13:00.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485448",
+    "ThreadId": "224441",
+    "Html": "<p>Hi There, I've received the same parser error also when trying to view the default.aspx page for the TailspinSpyworks tutorial in the IE browser and via F5.</p>\r\n<p>I'm trying to follow the Tailspin Spyworks tutorial.</p>\r\n<h2><em>Parser Error</em></h2>\r\n<p><span style=\"font-family:Arial, Helvetica, Geneva, SunSans-Regular, sans-serif\"><strong>Description: </strong>An error occurred during the parsing of a resource required to service this request. Please review the following specific parse error details and modify your source file appropriately. <br><br><strong>Parser Error Message: </strong>Could not load type 'TailspinSpyworks.Global'.<br><br><strong>Source Error:</strong> <br><br></span></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre><span style=\"color:#ff0000\">Line 1:  &lt;%@ Application Codebehind=&quot;Global.asax.cs&quot; Inherits=&quot;TailspinSpyworks.Global&quot; Language=&quot;C#&quot; %&gt;\r\n</span></pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial, Helvetica, Geneva, SunSans-Regular, sans-serif\">\r\n<p><br><strong>Source File: </strong>/global.asax<strong> &nbsp;&nbsp; Line: </strong>1 <br><br>I'm still trying to workout what the cause to the problem is?</p>\r\n</span></p>",
+    "PostedDate": "2010-08-26T17:39:31.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485672",
+    "ThreadId": "224441",
+    "Html": "<p>I don't know.&nbsp; There's a vb version download on this site.&nbsp; Go to source code, then click patches.&nbsp; I tried that and it works.&nbsp;</p>",
+    "PostedDate": "2010-08-27T06:17:29.46-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485881",
+    "ThreadId": "224441",
+    "Html": "<p>Hi Foxy;</p>\r\n<p>make sure your Global.asax.cs contains the following methode</p>\r\n<p>void Application_Error(object sender, EventArgs e)<br>{<br>Exception myEx = Server.GetLastError();<br>String RedirectUrlString = &quot;~/Error.aspx?InnerErr=&quot; + myEx.InnerException.Message.ToString() + &quot;&amp;Err=&quot; + myEx.Message.ToString();</p>\r\n<p>Response.Redirect(RedirectUrlString);<br>}<br><br>Inner Exception is null sometime.<br><br>Also in Error.aspx need to check InnerErr query string parameter.</p>\r\n<p>Otherwise just load the whole CS solution from the download, that is if you are not following Joe's vids,, BTW a good practice is to</p>\r\n<p>also&nbsp;follow the PDF tutorial.</p>\r\n<p>Good luck.</p>",
+    "PostedDate": "2010-08-27T16:02:35.343-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485884",
+    "ThreadId": "224441",
+    "Html": "<p>Hi attrib75,</p>\r\n<p>Thank you,, this maybe is the first feedback that I indirectly received from my uploaded VB version.</p>",
+    "PostedDate": "2010-08-27T16:08:52.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485898",
+    "ThreadId": "224441",
+    "Html": "<p>Basba, that was you that wrote that?&nbsp; I rather enjoy it very much!&nbsp; I'm new to C# so I'm using it as a learning tool.&nbsp; I'm also new to figuring out how carts work.&nbsp; As for the parser error we are getting, I'm not sure I understand your answer.&nbsp; Does the absence of the fix you suggested above, result in the error <span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\">&quot;Could not load type 'TailspinSpyworks.Global&quot;, because it is missing that required code?</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\">thanks!<br></span></p>",
+    "PostedDate": "2010-08-27T18:10:15.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "485993",
+    "ThreadId": "224441",
+    "Html": "<p>Yes it does, and I honestly don't know why this error fires up as a parser error,&nbsp; I too had problems with it at the start, and in the C# version there's like spelling errors too which fires up as a totally unrelated errors, &nbsp;e.g. ViewOrder is spelled VewOrder without an &quot;i&quot;, and a few other tidbits one has to watch out for.&nbsp; So if you are following the vids, try to read the PDF tutorials too and that way you will have a bette hold on the applications inner workings.&nbsp; That is what I did even when I was translating it to VB, I do admit that the translation is missing order and form but hey, it is a rough one.&nbsp; Thsoe who want to play with it they can clean it up if they wanted to.&nbsp; But!&nbsp; it does work and it is fully functional.&nbsp; And again thanx for using my VB version.</p>",
+    "PostedDate": "2010-08-28T09:04:51.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "486024",
+    "ThreadId": "224441",
+    "Html": "<p>That's very helpful, thank you</p>",
+    "PostedDate": "2010-08-28T14:21:58.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "486075",
+    "ThreadId": "224441",
+    "Html": "<p>U R welcome,</p>\r\n<p>Another thing though, this type of app is&nbsp;NOT&nbsp;a web application, it will fire up (again) a lot of wiered&nbsp; errors, if you for example try to call it from your local host ( like if you&nbsp;had copied the application to your wwwroot directory and converted it to an application through IIS to run&nbsp;on localhost (http:<a href=\"http://localhost(((you see here without &quot;/#####&quot; )))/myTailspinSpyworks/\">//localhost(((you see here without &quot;:#####&quot; )))/myTailspinSpyworks/</a>)&nbsp;in other words from outside the .Net debug server.&nbsp;</p>\r\n<p>The way to&nbsp;get it to work as a web app is to start&nbsp;it as a new web&nbsp;site project&nbsp;from the start, and trust me, it is a totally different structure and good experience.&nbsp;</p>\r\n<p>ONE LAST THING: and this goes to all who are doing the Tailspin app,,, always be sure that the db in the project is UNBLOCKED.</p>",
+    "PostedDate": "2010-08-29T01:42:38.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "486345",
+    "ThreadId": "224441",
+    "Html": "<p>Hi everyone,&nbsp;</p>\r\n<p>thank you for all your feedback. It's much appreciated. I'm trying what you suggested.</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2010-08-30T03:41:07.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

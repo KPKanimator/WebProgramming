@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "472642",
+    "ThreadId": "221413",
+    "Html": "I think there is a little bug in Application_Error function.If there is no InnerException available(value is null), a null reference exception will occur.\r\n\r\nPlease review this thread for details and the fix:\r\nhttp://forums.asp.net/t/1580405.aspx\r\n\r\nThank you",
+    "PostedDate": "2010-07-26T06:18:07.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472643",
+    "ThreadId": "221413",
+    "Html": "<p>Correct, I need to submit a patch to check the inner exception for null before trying to access it.</p>",
+    "PostedDate": "2010-07-26T06:22:34.45-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "475410",
+    "ThreadId": "221413",
+    "Html": "<p>Just in case you did not find it yet,,, click on&nbsp;the &quot;issue tracker&quot; tab&nbsp;and that will help you.</p>",
+    "PostedDate": "2010-08-02T05:47:50.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
