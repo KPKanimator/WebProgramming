@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "EditPersonalPage";
+}
+
+<h2>EditPersonalPage</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken() @* Создает скрытое поле и cookies с именем __RequestVerificationToken и случайными значениями, которые совпадают*@
+    @Html.TextBox("personalPage")
+    <input type="submit" name="editPersonalPage" value="Сохранить" />
+}

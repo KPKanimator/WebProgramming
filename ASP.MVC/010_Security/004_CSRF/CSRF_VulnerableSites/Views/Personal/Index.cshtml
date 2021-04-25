@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Домашняя страница пользователя @WebSecurity.CurrentUserName</p>
+<a href="@Model">@Model</a> (@Html.ActionLink("Edit", "EditPersonalPage"))

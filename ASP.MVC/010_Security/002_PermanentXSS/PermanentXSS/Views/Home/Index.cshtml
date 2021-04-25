@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about ASP.NET MVC visit
+                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>
+    </section>
+}
+<p>
+    В контроллере BuletinBoardController методы Create и Edit помечен атрибутом [ValidateInput(false)]. Данный атрибут отключает валидацию данных
+    для запросов к методу Create. Это означает что метод может получать потенциально опасные значения в виде HTML разметки или JavaScript кода.
+    Попробуйте при создании нового объявления добавить в поле ввода следующий текст <b>@Html.Raw(Server.HtmlEncode("<script>alert(document.cookie)</script>"))</b>
+
+    <br />
+    
+    Для удаления из разметки потенциально опасных значений в данном примере используется библиотека AntiXSS
+</p>

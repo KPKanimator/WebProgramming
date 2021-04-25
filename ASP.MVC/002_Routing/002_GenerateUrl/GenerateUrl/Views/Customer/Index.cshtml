@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Представление Index контроллера Customer</h2>
+
+        @*Генерация ссылок на действия в текущем контроллере*@
+
+        @Html.ActionLink("Домашняя", "Index")<br />
+        @Html.ActionLink("Создать", "Create")<br />
+        @Html.ActionLink("О клиентах", "About")<br />
+    </div>
+</body>
+</html>

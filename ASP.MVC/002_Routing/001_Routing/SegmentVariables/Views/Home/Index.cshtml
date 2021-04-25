@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @* @ViewBag.Variable вывод значение свойства из динамической коллекции*@
+        <h2>Variable: @ViewBag.Variable</h2>
+
+        <a href="/">Variable = DefaultId (~/)</a> <br />
+        <a href="/Home/Index/123">Variable = 123 (~/Home/Index/123)</a><br />
+        <a href="/Home/CustomVariable/456">Variable = 456 (~/Home/CustomVariable/456)</a><br />
+    </div>
+</body>
+</html>

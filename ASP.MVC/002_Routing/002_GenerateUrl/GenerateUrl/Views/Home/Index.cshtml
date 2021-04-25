@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Представление Index контроллера Home</h2>
+
+        @*Генерация ссылки на действие в другом контроллере.
+        Результат работы метода ActionLink зависит от текущей схемы маршрутизации
+        результат: <a href="/Customer/Index">Работа с клиентами</a>*@
+        
+        @Html.ActionLink("Работа с клиентами", "Index", "Customer")
+
+        <br />
+
+        @Html.RouteLink("Работа с клиентами", new { controller = "Customer", action = "Index" })
+
+        <br />
+
+        @*Передача дополнительных параметров действию*@
+        @Html.ActionLink("Создать запись о клиенте", "Create", "Customer", new { id = "Ivanov-Ivan" }, null)
+
+        <br />
+
+        @*Добавление HTML атрибутов*@
+        @Html.ActionLink("Создать запись о клиенте", "Create", "Customer", new { id = "Ivanov-Ivan" }, new { style = "font-size:25px;" })
+
+        <br />
+
+        @*Генерация URL без окружающей HTML разметки*@
+        Адрес действия "Создать запись о клиенте" - @Url.Action("Create", "Cusomer", new { id = "customer-name" })
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Представление Index основная область</h2>
+        @*Создание ссылки через метод RouteLink на действие в другой области*@
+        @Html.RouteLink("Admin area", new { controller = "Home", action = "Index", area = "Admin" })
+    </div>
+</body>
+</html>

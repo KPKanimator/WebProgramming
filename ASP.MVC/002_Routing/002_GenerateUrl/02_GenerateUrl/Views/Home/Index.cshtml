@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @*Url объект, упрощающий создания URL опираясь на настройки системы маршрутизации*@
+        @Url.Action("TestAction", "Test")<br />
+        @Url.RouteUrl(new { action = "TestAction", controller = "Test" })
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿@model EditorForModel.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*EditorForModel - визуализирует редакторы для целого объекта модели*@
+@Html.EditorForModel()
+
+<br />
+@*DisplayForModel - визуализирует представление для чтения свойств целого объекта модели*@
+@Html.DisplayForModel()

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "AuthFormGoodEF";
+}
+
+<h2>Форма авторизации</h2>
+
+@using (Html.BeginForm())
+{
+    <p>Логин @Html.TextBox("login")</p>
+    <p>Пароль @Html.TextBox("password")</p>
+
+    @Html.ValidationSummary();
+
+    <input type="submit" value="Login" />
+}

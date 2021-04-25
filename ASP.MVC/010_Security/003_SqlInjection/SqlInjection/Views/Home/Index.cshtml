@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    Если ввести в поле ввода login текст <mark>x' OR 1=1--</mark>
+    Авторизация в форме доступной по первой ссылке пройдет успешно. Объяснение в коде контроллера в методе AuthFormBad
+</p>
+
+@Html.ActionLink("Форма авторизации (SQL Injection)", "AuthFormBad")<br />
+@Html.ActionLink("Форма авторизации SQL Parameters", "AuthFormGood")<br />
+@Html.ActionLink("Форма авторизации ORM", "AuthFormGoodEF")

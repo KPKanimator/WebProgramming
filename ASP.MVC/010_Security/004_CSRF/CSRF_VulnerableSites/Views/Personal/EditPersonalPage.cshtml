@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "EditPersonalPage";
+}
+
+<h2>EditPersonalPage</h2>
+
+@using (Html.BeginForm())
+{   
+    @Html.TextBox("personalPage")
+    <input type="submit" name="editPersonalPage" value="Сохранить" />
+}
