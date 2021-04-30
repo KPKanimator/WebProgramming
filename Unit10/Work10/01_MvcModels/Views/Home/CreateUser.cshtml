@@ -1,0 +1,90 @@
+﻿@model _01_MvcModels.Models.User
+
+@{
+  ViewBag.Title = "CreateUser";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateUser</h2>
+
+
+<h2>Добавить пользователя</h2>
+@*@using (Html.BeginForm())*@
+@using (Html.BeginForm("DisplaySummary", "Home"))
+{
+  <div>@Html.LabelFor(m => m.UserId)@Html.EditorFor(m => m.UserId)</div>
+  <div>@Html.LabelFor(m => m.FirstName)@Html.EditorFor(m => m.FirstName)</div>
+  <div>@Html.LabelFor(m => m.LastName)@Html.EditorFor(m => m.LastName)</div>
+  <div>@Html.LabelFor(m => m.Role)@Html.EditorFor(m => m.Role)</div>
+  <div>
+    @Html.LabelFor(m => m.HomeAddress.City)
+    @Html.EditorFor(m => m.HomeAddress.City)
+  </div>
+  <div>
+    @Html.LabelFor(m => m.HomeAddress.Country)
+    @Html.EditorFor(m => m.HomeAddress.Country)
+  </div>
+  <button type="submit">Отправить</button>
+}
+
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+<hr>
+
+@*@using (Html.BeginForm())
+  {
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+      <h4>User</h4>
+      <hr />
+      @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+      <div class="form-group">
+        @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.BirthDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          @Html.EditorFor(model => model.BirthDate, new { htmlAttributes = new { @class = "form-control" } })
+          @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "text-danger" })
+        </div>
+      </div>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.IsApproved, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+          <div class="checkbox">
+            @Html.EditorFor(model => model.IsApproved)
+            @Html.ValidationMessageFor(model => model.IsApproved, "", new { @class = "text-danger" })
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+          <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+      </div>
+    </div>
+  }*@
+
+<div>
+  @Html.ActionLink("Back to List", "Index")
+</div>
