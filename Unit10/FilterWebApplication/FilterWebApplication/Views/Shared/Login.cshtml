@@ -1,0 +1,22 @@
+﻿
+@{
+  Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Login Form</title>
+</head>
+<body>
+  @using (Html.BeginForm())
+  {
+    @Html.ValidationSummary()
+    <p><label>Логин:</label><input name="username" /></p>
+    <p><label>Пароль:</label><input name="password" type="password" /></p>
+    <input type="submit" value="Войти" />
+  }
+</body>
+</html>
