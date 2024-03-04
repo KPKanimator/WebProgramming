@@ -366,3 +366,10 @@ javascript-fundamentals-materials
 /Unit03/01/003_Samples
 /Unit03/01/Web.config
 /Unit03/01/Web.Debug.config
+.vscode/settings.json
+Unit03/02/Web.config
+Unit03/02/Web.Debug.config
+Unit03/03/Web.config
+Unit03/03/Web.Debug.config
+Unit03/04/Web.config
+Unit03/04/Web.Debug.config

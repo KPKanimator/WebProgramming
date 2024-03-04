@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- 
+        Атрибут rules указывает браузеру где отображать границы между ячейками.
+        Имеет следующие значения:
+            - groups - линия отображается между группами, которые образуются тегами <thead>, <tfoot>, <tbody>, <colgroup> или <col>.
+            - cols - линия отображается между колонками.
+            - none - все границы скрываются.
+            - rows - граница рисуется между строками таблицы, созданых через тег <tr>. 
+        Атрибут НЕ РЕКОМЕНДУЕТСЯ в стандарте HTML5.
+      -->
+    <table width="450" cellpadding="2" cellspacing="0" border="1" rules="groups">
+        <!-- Задаем ширину первой строки.
+            Атрибуты:
+                - width - задает ширину колонки.
+                - align - задает выравнивание содержимого.
+                - span - указывает к какому количеству колонок нужно применить атрибуты.
+
+        -->
+        <colgroup width="100"></colgroup>
+        <colgroup span="9" align="center" width="50"></colgroup>
+        <tr>
+            <td>&nbsp;</td>
+            <td>2001</td>
+            <td>2002</td>
+            <td>2005</td>
+            <td>2007</td>
+            <td>2008</td>
+            <td>2009</td>
+            <td>2011</td>
+            <td>2012</td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td>Нефть</td>
+            <td>5</td>
+            <td>7</td>
+            <td>2</td>
+            <td>8</td>
+            <td>3</td>
+            <td>34</td>
+            <td>62</td>
+            <td>74</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <td>Золото</td>
+            <td>3</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+            <td>4</td>
+            <td>69</td>
+            <td>72</td>
+            <td>56</td>
+            <td>47</td>
+        </tr>
+        <tr>
+            <td>Дерево</td>
+            <td>5</td>
+            <td>8</td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>73</td>
+            <td>79</td>
+            <td>34</td>
+            <td>86</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Размер шрифта</title>
+    <style>
+        body{
+            font-size: 14px;
+        }
+        /*
+            Свойство font-size определяет размер шрифта.
+            В качестве значений может принимать значения абсолютных единиц измерения, относительных, размер в пикселях и процентах.
+            Консанты абсолютных единиц измерения:
+                - xx-small
+                - x-small
+                - small
+                - medium
+                - large
+                - x-large
+                - xx-large
+            Коэффициент перехода между двумя размерами составляет 1,5 при переходе от меньшего к большему и 0,66 от большего к меньшему.
+        */
+        .a1 {
+            font-size: xx-small;
+        }
+
+        .a2 {
+            font-size: x-small;
+        }
+
+        .a3 {
+            font-size: small;
+        }
+
+        .a4 {
+            font-size: medium;
+        }
+
+        .a5 {
+            font-size: large;
+        }
+
+        .a6 {
+            font-size: x-large;
+        }
+
+        .a7 {
+            font-size: xx-large;
+        }
+        /*
+            Относительные единицы измерения, устанавливают размер шрифта относительно родительского элемента.
+            Константы:
+                - smaller
+                - larger
+        */
+        .r1 {
+            font-size: smaller;
+        }
+
+        .r2 {
+            font-size: larger;
+        }
+
+        .p1 {
+            font-size: 12px;
+        }
+
+        .p2 {
+            font-size: 14px;
+        }
+
+        .p3 {
+            font-size: 16px;
+        }
+
+        .p4 {
+            font-size: 18px;
+        }
+
+        .p5 {
+            font-size: 20px;
+        }
+
+        .p6 {
+            font-size: 24px;
+        }
+
+        .p7 {
+            font-size: 28px;
+        }
+
+        .pr1 {
+        }
+
+        .pr1 {
+            font-size: 10%;
+        }
+
+        .pr2 {
+            font-size: 20%;
+        }
+
+        .pr3 {
+            font-size: 30%;
+        }
+
+        .pr4 {
+            font-size: 40%;
+        }
+
+        .pr5 {
+            font-size: 50%;
+        }
+
+        .pr6 {
+            font-size: 60%;
+        }
+
+        .pr7 {
+            font-size: 70%;
+        }
+
+        .em1 {
+            font-size: 0.8em;
+        }
+
+        .em2 {
+            font-size: 1.2em;
+        }
+
+        .em3 {
+            font-size: 1.6em;
+        }
+
+        .em4 {
+            font-size: 1.8em;
+        }
+
+        .em5 {
+            font-size: 2.0em;
+        }
+
+        .em6 {
+            font-size: 2.2em;
+        }
+
+        .em7 {
+            font-size: 2.8em;
+        }
+
+
+        .rem1 {
+            font-size: 0.8rem;
+        }
+
+        .rem2 {
+            font-size: 1.2rem;
+        }
+
+        .rem3 {
+            font-size: 1.6rem;
+        }
+        .rem4 {
+            font-size: 1.8rem;
+        }
+        .rem5 {
+            font-size: 2.0rem;
+        }
+        .rem6 {
+            font-size: 2.2rem;
+        }
+        .rem7 {
+            font-size: 2.8rem;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Абсолютные константы</th>
+                <th>Относительные константы</th>
+                <th>px</th>
+                <th>%</th>
+                <th>em</th>
+                <th>rem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="a1">xx-small</td>
+                <td rowspan="3" class="r1">smaller</td>
+                <td class="p1">12px</td>
+                <td class="pr1">10%</td>
+                <td class="em1">0.8</td>
+                <td class="rem1">0.8</td>
+            </tr>
+            <tr>
+                <td class="a1">x-small</td>
+                <td class="p2">14px</td>
+                <td class="pr2">20%</td>
+                <td class="em2">1.2</td>
+                <td class="rem2">1.2</td>
+            </tr>
+            <tr>
+                <td class="a3">small</td>
+                <td class="p3">16px</td>
+                <td class="pr3">30%</td>
+                <td class="em3">1.6</td>
+                <td class="rem3">1.6</td>
+            </tr>
+            <tr>
+                <td class="a4">medium</td>
+                <td rowspan="4" class="r2">larger</td>
+                <td class="p4">18px</td>
+                <td class="pr4">40%</td>
+                <td class="em4">1.8</td>
+                <td class="rem4">1.8</td>
+            </tr>
+            <tr>
+                <td class="a5">large</td>
+                <td class="p5">20px</td>
+                <td class="pr5">50%</td>
+                <td class="em5">2.0</td>
+                <td class="rem5">2.0</td>
+            </tr>
+            <tr>
+                <td class="a6">x-large</td>
+                <td class="p6">24px</td>
+                <td class="pr6">60%</td>
+                <td class="em6">2.2</td>
+                <td class="rem6">2.2</td>
+            </tr>
+            <tr>
+                <td class="a7">xx-large</td>
+                <td class="p7">28px</td>
+                <td class="pr7">70%</td>
+                <td class="em7">2.8</td>
+                <td class="rem7">2.8</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

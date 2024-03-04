@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Приоритеты селекторов</title>
+    <style>
+        /* Высокий приоритетный */
+        #ident {
+            color: red;
+        }
+        /* Средний приоритет */
+        .class {
+            color: blue;
+        }
+        /* Низкий приоритет */
+        p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Попробуйте добавить атрибут style и задать цвет текста. -->
+    <p class="class" id="ident">
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+    </p>
+</body>
+</html>
