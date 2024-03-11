@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table {
+            width: 70%;
+            margin: auto;
+            /* Свойством border задаем границы таблице. */
+            border: 3px solid black;
+            /*
+                Свойство border-collapse пощволяет задать отображение границы вокруг ячеек таблицы.
+                Имеет несколько значений:
+                    - collapse - рамки ячеек сливаются в одну, а промежутки между рамками убираются.
+                    - separate - рамки ячеек располагаются отдельно.
+            */
+            border-collapse: separate;
+            /*
+                Свойство border-spacing позволяет задать отступы между ячейками и рамкой таблицы. 
+                Если задано одно значение - отступы со всех сторон одинаковые, если два значения, то первое задает расстояние по горизонтали, второе - по вертикали.
+            */
+            border-spacing: 5px;
+            /*
+                Свойство empty-cells позволяет задать параметры отображения пустых ячеек.
+                Имеет два значения:
+                    - show - рамка и фон отображаются.
+                    - hide - скрывает ячейку, задавая ей свойство display: none.
+            */
+            empty-cells: hide;
+        }
+
+        th {
+            padding: 5px;
+            /* Свойством border задаем границы заголавным ячейкам таблицы. */
+            border: 3px solid black;
+        }
+
+        td {
+            padding: 5px;
+            /* Свойством border задаем границы обычным ячейкам таблицы. */
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>Q4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Microsoft</td>
+                <td>20.3</td>
+                <td>30.5</td>
+                <td>23.5</td>
+                <td>40.3</td>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>50.2</td>
+                <td>40.63</td>
+                <td>45.23</td>
+                <td>39.3</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>25.4</td>
+                <td>30.2</td>
+                <td>33.3</td>
+                <td>36.7</td>
+            </tr>
+            <tr>
+                <td>IBM</td>
+                <td>20.4</td>
+                <td>15.6</td>
+                <td></td>
+                <td>29.3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

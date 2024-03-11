@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        span{
+            color: red;
+        }
+        /* Псевдокласс :not позволяет задать стили для элементов, которые не содержат указанный селектор. CSS3. */
+        :not(span){
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок</h1>
+    <div>
+        Элемент  div.
+        <p>
+            Этот текст находится в параграфе, <span>а этот текст в теге span.</span>
+        </p>
+    </div>
+</body>
+</html>

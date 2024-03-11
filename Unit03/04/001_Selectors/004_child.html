@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Селектор применяет стили только к тем элементам, которые являются непосредственно дочерними. */
+        p>span {
+            color: red;
+            background-color: blue;
+        }
+
+        p span {
+            color: rgb(72, 20, 216);
+            background-color: rgb(55, 226, 132);
+        }
+
+        ul strong {
+            background-color: gray;
+        }
+        
+        li>strong {
+            background-color: rgb(26, 12, 223);
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1 example -->
+    <div>
+        <p>
+            <span>Tincidunt</span> integer eu augue <span>augue</span> nunc elit dolor, luctus placerat scelerisque
+            euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus
+            vel.
+        </p>
+        <span>
+            Span внутри тега DIV.
+        </span>
+    </div>
+    <!-- 2 example -->
+    <div>
+        <p>
+            <span>
+                Span внутри параграфа.
+            </span>
+        <div>
+            <span>
+                Span внутри Div.
+            </span>
+        </div>
+        </p>
+    </div>
+    <!-- 3 example -->
+    <p> <!-- <<===== -->
+    <p>
+        <span>Tincidunt</span> integer eu augue <span>augue</span> nunc elit dolor, luctus placerat scelerisque euismod,
+        iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        <br>
+    <div>
+        <span>
+            Span внутри тега P. <strong>Не является непосредственно дочерним.</strong>
+        </span>
+    </div>
+    </p>
+    <!-- 4 example -->
+    <h4>CSS Selectors</h4>
+
+    <ul>
+        <li>1</li>
+        <li>
+            <div>
+                <span>
+                    <strong>2</strong>
+                </span>
+            </div>
+        </li>
+        <li>3</li>
+        <li>4</li>
+        <li><strong>5</strong></li>
+    </ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Контекстные селекторы позволяют задавать стили элемента находящимся в определенном контексте. 
+        применить стили к html-элементам, которые находятся внутри этих html-элементов вне зависимости от вложенности */
+        .red li a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Параграф в теге BODY.
+    </p>
+    <div>
+        <p>Параграф в теге DIV.</p>
+        <ul class="red">
+            <li><a href="#">Link 1</a></li>
+            <li>Eiusmod duis non officia pariatur. Officia fugiat culpa enim laborum fugiat. Cillum voluptate officia
+                enim sit do voluptate sit culpa amet
+                magna nostrud commodo do duis. Veniam ex nulla non ut sit aute. Deserunt proident veniam non cillum do
+                adipisicing elit enim elit.
+                Veniam velit ea irure dolore sit ad Lorem irure in laboris irure veniam non culpa.</li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </div>
+    <a href="#">Link in body.</a>
+</body>
+
+</html>

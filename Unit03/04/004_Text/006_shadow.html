@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        p {
+            font-size: 45px;
+        }
+        .one {            
+            /*
+                Свойство text-shadow позволяет задать тень для текста. Имеет следующие параметры:
+                text-shadow: <сдвиг по х> <сдвиг по у> <размытие> <цвет>
+            */
+            text-shadow: 3px 3px 0 blue;
+        }
+        .two{
+            /* допускается указывть несколько теней через запятую. */
+            text-shadow: 1px 1px 5px blue, 5px 5px 15px darkorange;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">Hello</p>
+    <p class="two">Twice shadow</p>
+</body>
+</html>

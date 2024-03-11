@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Такой вид селектора позволяет выбрать все параграфы, ко орые находятся непосредственно после заголовков первого уровня. */
+        h1 + p{
+            background-color: lavender;
+            font-size: 18px;
+        }
+        /* Селектор применяет стили ко всем параграфам, которые находятся после заголовка второго уровня и имеют общего родителя. */
+        h2 ~ p{
+            background-color: black;
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Первый заголовок.</h1>
+    <p>Первый параграф.</p>
+    <p>Aliqua est commodo irure ex Lorem cillum. Cupidatat eu minim voluptate eu ullamco quis. Eiusmod aute esse veniam aute excepteur aute mollit quis irure aute. Et qui elit nostrud minim nostrud laborum consectetur excepteur mollit deserunt amet. Laborum enim minim sit nostrud sunt non tempor adipisicing magna commodo non in. Enim aliqua consectetur adipisicing sit incididunt et adipisicing amet exercitation officia. Labore adipisicing culpa incididunt cillum.</p>
+    <h1>Второй заголовок.</h1>
+    <p>Второй параграф.</p>
+
+    <p>Третий параграф.</p>
+    <h1>Третий заголовок.</h1>
+    <div>
+        <h2>Заголовок второго уровня.</h2>
+        <p>Параграф вложенный в DIV.</p>
+        <ul>
+            <li>Один</li>
+            <li>Два</li>
+            <li>Три</li>
+        </ul>
+        <p>Параграф после списка.</p>
+        <a href="#">Ссылка.</a>
+        <p>Параграф после ссылки.</p>
+    </div>
+</body>
+</html>

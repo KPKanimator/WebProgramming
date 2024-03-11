@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Псевдокласс :only-of-type применяется к дочернему элементу указанного типа, только если он единственный у родителя. CSS3 */
+        p:only-of-type {
+            border: 5px double red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Paragraph 2</p> <!--удалите данный параграф-->
+    </div>
+
+    <div>
+        <p>Paragraph 1</p>
+    </div>
+
+    <div>
+        <span>Span 1</span>
+        <p>Paragraph 1</p>
+    </div>
+</body>
+</html>

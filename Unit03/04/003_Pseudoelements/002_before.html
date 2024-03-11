@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Псевдоэлемент before позволяет динамически генерировать контент и вставлять до содержимого элемента. */
+        p::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin-right: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Иван любит:
+        <p>учится</p>
+        <p>работать</p>
+        <p>путешествовать</p>
+        <p>отдыхать</p>
+    </div>
+  
+</body>
+</html>
