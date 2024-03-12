@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div.container {
+            width: 100%;
+            background-color: aquamarine;
+            /* 
+                Первый способ отменить схлопывание.
+            */
+            overflow: auto;
+        }
+
+        div.container>div {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        /*
+            Второй способ.
+        */
+        /*.container:last-child::after{
+           content: "";
+           visibility: hidden;
+           display: block;
+           height: 0;
+           clear: both;
+       }*/
+
+        #elem1 {
+            background-color: red;
+        }
+
+        #elem2 {
+            background-color: green;
+        }
+
+        #elem3 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="elem1"></div>
+        <div id="elem2"></div>
+        <div id="elem3"></div>
+
+        <!-- Третий способ -->
+        <!--<div style="clear:both;"></div>-->
+    </div>
+
+</body>
+
+</html>

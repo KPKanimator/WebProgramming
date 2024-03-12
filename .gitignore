@@ -364,12 +364,14 @@ Module2/*
 ASP.MVC
 javascript-fundamentals-materials
 /Unit03/01/003_Samples
-/Unit03/01/Web.config
-/Unit03/01/Web.Debug.config
+*/[wW]eb.config
+*/[wW]eb.Debug.config
+*/.vscode/*
 .vscode/settings.json
-Unit03/02/Web.config
-Unit03/02/Web.Debug.config
-Unit03/03/Web.config
-Unit03/03/Web.Debug.config
-Unit03/04/Web.config
-Unit03/04/Web.Debug.config
+# Unit04
+**/001_new_tags/img/*
+**/004_video/video/*
+**/003_audio/audio/*
+**/bootstrap/*
+# Unit05.............
+
