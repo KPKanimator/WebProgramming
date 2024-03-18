@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;            
+            position: absolute;
+        }
+
+        #el1{
+            background-color: red;
+            top: 10px;
+            left: 10px;
+            /*
+                Свойство позволяет указать позиионирование по оси Z. Эт полезно когда элемента при абсолютном или относительном позиционирвании не перекрывали друг друга.
+            */
+            z-index: 10;
+        }
+
+        #el2{
+            background-color: green;
+            top: 20px;
+            left: 20px;
+            z-index:20;
+        }
+        #el3 {
+            background-color: yellow;
+            top: 30px;
+            left: 30px;
+            z-index: 28;
+        }
+    </style>
+</head>
+<body>
+    <div id="el1"></div>
+    <div id="el2"></div>
+    <div id="el3"></div>
+</body>
+</html>

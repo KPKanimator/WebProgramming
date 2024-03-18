@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- Тег определяет область, в которую выаодится информация, преимущественно с помощью скриптов. HTML5 -->
+    <output>Какой-то текст, являющийся результатом работы скрипта</output>
+
+
+    <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+        <p>
+            Введите длину в сантиметрах:
+            <input type="number" name="cm" autofocus>
+        </p>
+        <p>Длина в дюймах: <output name="result">0</output></p>
+    </form>
+</body>
+</html>

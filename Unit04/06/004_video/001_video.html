@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- 
+        Тег video используется для добавления видео контента на веб-станицу.
+        Имеет те же атрибуты что и тег audio, и несколько дополнительных:
+            - height - задает высоту окна для отображения видеоданных.
+            - poster - позволяет задать путь к изображению, которое будет отображаться до воспроизведения видеофайла.
+            - width - задает ширину окна для отображения видеоданных.
+      -->
+    <video controls loop poster="img/poster.png" width="800">
+        <source src="video/vsvideo.mp4" />
+        <source src="video/vsvideo.ogg" />
+        <source src="video/vsvideo.webm" />
+    </video>
+</body>
+</html>

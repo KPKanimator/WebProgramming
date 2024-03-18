@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример веб-страницы на Bootstrap 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Мой Сайт</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p class="lead">Это пример веб-страницы, созданной с использованием Bootstrap 5.</p>
+        <p>Bootstrap – это популярный фреймворк для создания адаптивных и современных веб-сайтов. Он предоставляет
+          готовые компоненты, такие как навигационные панели, кнопки, формы и многое другое, что упрощает процесс
+          разработки.</p>
+        <button type="button" class="btn btn-primary">Подробнее</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/300/200" class="card-img-top" alt="Изображение">
+          <div class="card-body">
+            <h5 class="card-title">Карточка</h5>
+            <p class="card-text">Это пример карточки с изображением и текстом внутри.</p>
+            <a href="#" class="btn btn-primary">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Мой Сайт</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#">Политика конфиденциальности</a>
+          <span class="mx-2">|</span>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
