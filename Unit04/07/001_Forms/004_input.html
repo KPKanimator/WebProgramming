@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <!--  
+        Флажок представляет собой элемент, который может находиться в одном из двух состояний: отмеченном и неотмеченном.
+      -->
+    <form method="get" action="">
+        <h3>Выберите курсы, которые хотите пройти:</h3>
+        <p>
+            <!-- Атрибут checked позволяет установить флажок в отмеченное состояние. -->
+            <input type="checkbox" checked name="html5" />
+            <label>HTML5&amp;CSS3</label>
+        </p>
+        <p>
+            <input type="checkbox" name="bootstrap" />
+            <label>Bootstrap 5</label>
+        </p>
+        <p>
+            <input type="checkbox" name="js" />
+            <label>JavaScript</label>
+        </p>
+        <p>
+            <input type="checkbox" name="angular2" />
+            <label>Angular2</label>
+        </p>
+
+        <h3>Выберите удобное для Вас время:</h3>
+        <p>
+            <input type="radio" name="time" value="morning" />
+            <label>9:00 - 11:00</label>
+        </p>
+        <p>
+            <input type="radio" name="time" value="dinner" />
+            <label>11:30 - 13:30</label>
+        </p>
+        <p>
+            <input type="radio" name="time" value="evening" />
+            <label>19:00 - 21:00</label>
+        </p>
+
+        <p>
+            <button type="submit">Отправить данные</button>
+        </p>
+    </form>
+</body>
+
+</html>

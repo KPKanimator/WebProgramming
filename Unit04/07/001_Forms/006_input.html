@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Элементы для работы с датой и временем</h3>
+    <form>
+        <!-- 
+            Если элементу input не задан атрибут type, или браузер не поддерживает какое-либо значение атрибута type, отображаться элемент будет как текстовое поле.  
+          -->
+        <p>
+            <label for="ld">Местная дата и время:</label>
+            <input type="datetime-local" id="ld" name="localdate" />
+        </p>
+        <p>
+            <label for="dt">Дата и время:</label>
+            <input type="datetime" id="dt" name="datetime" />
+        </p>
+        <p>
+            <label for="date">Дата:</label>
+            <input type="date" id="d" name="date" />
+        </p>
+        <p>
+            <label for="t">Время:</label>
+            <input type="time" id="t" name="time" />
+        </p>
+        <p>
+            <label for="m">Месяц:</label>
+            <input type="month" id="m" name="month" />
+        </p>
+        <p>
+            <label for="w">Текущая неделя:</label>
+            <input type="week" id="w" name="week" />
+        </p>        
+    </form>
+    <br />
+
+    <h3>Элементы для ввода чисел и ползунок</h3>
+    <form>
+        <p>
+            <!-- 
+                input с типом  number позволяет вводить числа. s
+                Имеет следующие атрибуты: 
+                    - min       - минимально допустимое значение.
+                    - max       - максимально допустимое значение.
+                    - readonly  - доступно только для чтения.
+                    - required  - указывает, что данное поле обязательно должно иметь значение.
+                    - step      - значение, на которое будет увеличиваться число в поле.
+                    - value     - значение по умолчанию.
+              -->
+            <label for="number">Поле для ввода чисел:</label>
+            <input type="number" min="10" max="100" step="5" value="15" id="number" />
+        </p>
+        <p>
+            <input type="text" list="price" />
+            <datalist id="price">
+                <option value="10" />
+                <option value="100" />
+                <option value="1000" />
+                <option value="10000" />
+                <option value="100000" />
+            </datalist>
+        </p>
+        <p>
+            <label for="slider">Ползунок</label>
+            <input type="range" step="1" min="0" max="10" id="slider" name="slider" />
+        </p>
+    </form>
+    <br />
+
+    <h3>Элементы для ввода цвета, телефона, почтового адреса и веб-адреса</h3>
+    <form>
+        <p>
+            <label for="favcolor">Цвет:</label>
+            <input type="color" id="favcolor" name="favcolor" />
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="user@gmail.com" id="email" name="email" />
+        </p>
+        <p>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" />
+        </p>
+        <p>
+            <label for="phone">Телефон:</label>
+            <input type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone" />
+        </p>
+
+        <input type="submit" />
+    </form>
+</body>
+</html>

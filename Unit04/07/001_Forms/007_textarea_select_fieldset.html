@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Пример создания выпадающих и многозначных списков</legend>
+            <p>
+                <label for="phone">Выберите модель:</label>
+                <select id="phone" name="phone">
+                    <option value="iphone 6s">iPhone 6S</option>
+                    <option value="lumia 950">Lumia 950</option>
+                    <option value="nexus 5x">Nexus 5X</option>
+                    <option value="galaxy s7">Galaxy S7</option>
+                </select>
+            </p>
+            <p>
+                <label for="phone">Выберите модель:</label>
+                <select id="phone" name="phone">
+                    <option disabled selected>Выберите модель</option>
+                    <option value="iphone 6s">iPhone 6S</option>
+                    <option value="lumia 950">Lumia 950</option>
+                    <option value="nexus 5x">Nexus 5X</option>
+                </select>
+            </p>
+            <p>
+                <!-- Задав атрибут multiple, в выпадающем списке можно выбрать несколько элементов. -->
+                <label for="phone">Выберите модель:</label>
+                <select multiple id="phone" name="phone">
+                    <option value="iphone 6s">iPhone 6S</option>
+                    <option value="lumia 950">Lumia 950</option>
+                    <option value="nexus 5x">Nexus 5X</option>
+                    <option value="galaxy s7">Galaxy S7</option>
+                </select>
+            </p>
+            <p>
+                <!-- Элементы выпадающего списка можно сгруппировать, поместив группу тегов option внутрь тега optgroup -->
+                <label for="phone">Выберите модель:</label>
+                <select id="phone" name="phone">
+                    <optgroup label="Apple">
+                        <option value="iphone 6s">iPhone 6S</option>
+                        <option value="iphone 6s plus">iPhone 6S Plus</option>
+                        <option value="iphone 5se">iPhone 5SE</option>
+                    </optgroup>
+                    <optgroup label="Microsoft">
+                        <option value="lumia 950">Lumia 950</option>
+                        <option value="lumia 950 xl">Lumia 950 XL</option>
+                        <option value="lumia 650">Lumia 650</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <!-- Тег textarea позволяет создать многострочное поле для ввода текста. С помощью атрибута cols и rows можно задать количество строк и столбцов. -->
+            <label for="comment">Оставьте комментарий:</label><br />
+            <textarea id="comment" name="comment" placeholder="Написать комментарий" cols="50" rows="4"></textarea>
+        </p>
+    </form>
+</body>
+</html>

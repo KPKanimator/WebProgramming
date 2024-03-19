@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form method="post" action="">
+       <p>
+           <!-- 
+               Для отправки файла на сервер, у формы должен быть установлен атрибут enctype="multipart/form-data".
+               Атрибуты:
+                - accept    - устанавливает тип файлов, которые допустимы для выбора.
+                - multiple  - позволяет выбирать множество файлов.
+                - required  - требует обязательного выбора файла.
+             -->
+           <input type="file" value="Выберите файл..." multiple />
+       </p>
+        <p>
+            <!-- Скрытое поле, которое никак не отображается на странице. Предназначенно для хранения данных, которые не нужно отображать пользователю. -->
+            <input type="hidden" value="secret value" />
+        </p>
+        <p>
+            <!-- Обычной кнопке можно задать обработчик с помощью JavaScript. -->
+            <button type="button">Обычная кнопка</button>
+        </p>
+        <p>
+            <input type="image" src="img/send.png" width="32" value="Отправить" />
+        </p>
+    </form>
+</body>
+</html>
