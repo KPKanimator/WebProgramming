@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вложенные функции</title>
+</head>
+
+<body>
+    <script>
+        function calculate(x) { // x находится в лексическом окружении создаваемом при вызове calculate
+
+            // вложенная функция
+            function increment() {
+                return x + 1; // переменная x будет взята из лексического окружения внешней функции
+            }
+
+            console.log(increment());
+        }
+
+        calculate(1);
+        calculate(10);
+    </script>
+</body>
+
+</html>l

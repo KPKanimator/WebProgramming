@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <p>Пользователи системы:</p>
+  <ul id="usersList">
+  </ul>
+
+  <script>
+    // массив сгенерирован с помощью https://next.json-generator.com/
+    let users = [
+  {
+    balance: '4516.42',
+    age: 43,
+    name: {
+      'first': 'Cruz',
+      'last': 'Burks'
+    },
+    company: 'Comfirm',
+    email: 'annie_carlson@undefined.date',
+    friends: [
+      {
+        'id': 0,
+        name: 'June Williams'
+      },
+      {
+        'id': 1,
+        name: 'Hannah Townsend'
+      },
+      {
+        'id': 2,
+        name: 'Bennett Benson'
+      },
+      {
+        'id': 3,
+        name: 'Dillard Rodgers'
+      },
+      {
+        'id': 4,
+        name: 'Helena Glass'
+      }
+    ],
+    'profile': {
+      name: 'Annie Carlson'
+    }
+  },
+  {
+    balance: '2536.75',
+    age: 50,
+    name: {
+      'first': 'Kara',
+      'last': 'Harvey'
+    },
+    company: 'Yogasm',
+    email: 'laurel_peck@undefined.post',
+    friends: [
+      {
+        'id': 0,
+        name: 'Iva Snyder'
+      },
+      {
+        'id': 1,
+        name: 'Wheeler Farrell'
+      }
+    ],
+    'profile': {
+      name: 'Laurel Peck'
+    }
+  },
+  {
+    balance: '2108.38',
+    age: 80,
+    name: {
+      'first': 'Miles',
+      'last': 'Lang'
+    },
+    company: 'Verton',
+    email: 'ford_buckner@undefined.lds',
+    friends: [
+      {
+        'id': 0,
+        name: 'Erin Pruitt'
+      },
+      {
+        'id': 1,
+        name: 'Morrison Walters'
+      },
+      {
+        'id': 2,
+        name: 'Raymond Booker'
+      },
+      {
+        'id': 3,
+        name: 'Whitney Barr'
+      }
+    ],
+    'profile': {
+      name: 'Ford Buckner'
+    }
+  },
+  {
+    balance: '6238.01',
+    age: 49,
+    name: {
+      'first': 'Ila',
+      'last': 'Moon'
+    },
+    company: 'Terascape',
+    email: 'puckett_hendrix@undefined.recipes',
+    friends: [
+      {
+        'id': 0,
+        name: 'Green Casey'
+      },
+      {
+        'id': 1,
+        name: 'Isabel Meadows'
+      },
+      {
+        'id': 2,
+        name: 'Mia Ingram'
+      },
+      {
+        'id': 3,
+        name: 'Arline Rivera'
+      },
+      {
+        'id': 4,
+        name: 'Savage Burris'
+      }
+    ],
+    'profile': {
+      name: 'Puckett Hendrix'
+    }
+  },
+  {
+    balance: '6548.83',
+    age: 23,
+    name: {
+      'first': 'Farmer',
+      'last': 'Campos'
+    },
+    company: 'Orbaxter',
+    email: 'bonner_lowery@undefined.budapest',
+    friends: [
+      {
+        'id': 0,
+        name: 'Gutierrez Leonard'
+      },
+      {
+        'id': 1,
+        name: 'Reeves Bradford'
+      },
+      {
+        'id': 2,
+        name: 'Gena Valencia'
+      }
+    ],
+    'profile': {
+      name: 'Bonner Lowery'
+    }
+  },
+  {
+    balance: '3404.11',
+    age: 54,
+    name: {
+      'first': 'Hillary',
+      'last': 'Camacho'
+    },
+    company: 'Danja',
+    email: 'bond_brooks@undefined.reit',
+    friends: [
+      {
+        'id': 0,
+        name: 'Irwin Hood'
+      }
+    ],
+    'profile': {
+      name: 'Bond Brooks'
+    }
+  },
+  {
+    balance: '4481.63',
+    age: 94,
+    name: {
+      'first': 'Jolene',
+      'last': 'Hebert'
+    },
+    company: 'Skinserve',
+    email: 'casey_alford@undefined.new',
+    friends: [
+      {
+        'id': 0,
+        name: 'Christensen Branch'
+      },
+      {
+        'id': 1,
+        name: 'Della Fuentes'
+      },
+      {
+        'id': 2,
+        name: 'Savannah Peters'
+      },
+      {
+        'id': 3,
+        name: 'Wells Hughes'
+      }
+    ],
+    'profile': {
+      name: 'Casey Alford'
+    }
+  },
+  {
+    balance: '4148.07',
+    age: 61,
+    name: {
+      'first': 'Watkins',
+      'last': 'Warner'
+    },
+    company: 'Cipromox',
+    email: 'tabatha_foreman@undefined.software',
+    friends: [
+      {
+        'id': 0,
+        name: 'Russo Obrien'
+      },
+      {
+        'id': 1,
+        name: 'Ewing Stanley'
+      },
+      {
+        'id': 2,
+        name: 'Nicole Snider'
+      },
+      {
+        'id': 3,
+        name: 'Burgess Norris'
+      },
+      {
+        'id': 4,
+        name: 'Garrett Whitley'
+      }
+    ],
+    'profile': {
+      name: 'Tabatha Foreman'
+    }
+  }
+]
+
+    let list = document.querySelector("#usersList");
+
+    // вариант 1
+    for (let i = 0; i < users.length; i++) {
+        const currentUser = users[i];
+        let fullName = `${currentUser.name.first} ${currentUser.name.last}`;
+        let liContent = `${fullName} (${currentUser.email})`;
+        let li = document.createElement("li");
+        li.textContent = liContent;
+        list.append(li);
+    }
+
+    // вариант 2
+    // users.forEach(user => {
+    //   let content = `${user.name.first} ${user.name.first} (${user.email})`;
+    // 	createListItem(content);
+    // });
+    
+    // function createListItem(content) {
+    // 	let li = document.createElement("li");
+    // 	li.textContent = content;
+    // 	list.append(li);
+    // }
+  </script>
+</body>
+</html>

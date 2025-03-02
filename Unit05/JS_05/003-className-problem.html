@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Неудобства использования className</title>
+
+    <style>
+        .message {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid gray;
+            border-radius: 8px;
+            background-color: orange;
+            font-weight: bold;
+            margin: 8px;
+            padding: 15px;
+        }
+        
+        .read {
+            background-color: white;  
+            color:gray; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">Message 1</div>
+    <div class="message read">Message 2</div>
+    <div id="third-div" class="message">Message 3</div>
+
+    <script>
+        let div = document.querySelector("#third-div");
+        // устанавливая значение свойству className меняется значение атрибута class 
+        // (другие классы, если они есть, удаляются)
+        div.className = "read";
+
+        // className - свойство строкового типа, для того чтобы добавить класс к уже существующим
+        // нужно добавить пробел и имя, класса, как при редактировании атрибута class в разметке.
+        //div.className += " read";
+    </script>
+</body>
+
+</html>

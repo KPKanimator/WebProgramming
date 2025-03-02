@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальный объект</title>
+</head>
+<body>
+    <script>
+        // название глобального объекта зависит от среды, в которой выполняется сценарий
+        // в браузере глобальный объект - window, в Node.js - global
+        // globalThis - стандартизированное имя глобального объекта
+        
+        var exampleName1 = "Test1"; // Переменная, созданная через var, становится глобальной переменной
+        let exampleName2 = "Test2"; // Переменная, созданная через let, доступна только в данном сценарии
+
+        // Функция в глобальной области видимости
+        function testFunc() {
+            console.log("This is test function");
+        }
+
+        // Глобальные переменные и функции, являются свойствами глобального объекта
+        // Для браузера глобальный объект - window
+
+        console.log(globalThis.exampleName1); // глобальная переменная exampleName1 доступна как свойство объекта window
+        console.log(globalThis.exampleName2); // переменная exampleName2, созданная через let, не глобальная и не доступна через свойство window
+        console.log(exampleName2); 
+
+        globalThis.testFunc(); // Функция testFunc глобальная и ее можно вызвать на глобальном объекте
+        testFunc(); 
+
+        globalThis.alert("test 1"); // Любую глобальную функцию можно вызвать на глобальном объекте
+        alert("test 2");
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена контекста</title>
+</head>
+
+<body>
+    <script>
+        let obj1 = {
+            prop1 : "Test",
+            prop2 : 123
+        };
+
+        let obj2 = {
+            prop1 : "Hello",
+            prop2 : "world"
+        };
+
+        function show() {
+            console.log(this.prop1);
+            console.log(this.prop2);
+        }
+
+        show(); // контекст функции - глобальный объект
+        
+        // apply и call методы для запуска выбранной функции с применением указанного контекста
+        show.apply(obj1); // контекст вызываемой функции - obj1
+        show.call(obj2); // контекст вызываемой функции - obj2
+
+        let newFunction = show.bind(obj1); // создаем новую функцию и привязываем к ней в качестве контекста obj1
+        newFunction();
+    </script>
+</body>
+
+</html>

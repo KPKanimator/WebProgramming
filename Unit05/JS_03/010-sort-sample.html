@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Sorting list</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <ul id="list">
+    <li>Яблоко</li>
+    <li>Груша</li>
+    <li>Апельсин</li>
+    <li>Мандарин</li>
+    <li>Ананас</li>
+    <li>Слива</li>
+  </ul>
+
+  <script>
+    let list = document.querySelector("#list");
+    let items = document.querySelectorAll("li"); // получаем объект NodeList (это не массив)
+    let itemsArray = Array.from(items); // на основе NodeList создаем массив
+    
+    // выполняем сортировку с помощью стандартного метода массива
+    // так как сортируются узлы DOM нужно определить	критерии, по	которым	узлы	будут	сравниваться
+    // функция,	указанная в параметре	метода	sort,	определяет логику	сравнения	двух	элементов	в	массиве, она должна возвращать значение
+    // если а <	b возвращать значение	меньше	О
+    // если а >	b возвращать значение	больше	О
+    // если а == b возвращать 0
+
+    itemsArray.sort(function (a, b) {
+      if (a.textContent < b.textContent)
+        return -1;
+      if (a.textContent > b.textContent)
+        return 1;
+      return 0;
+    });
+
+    // добавление элементов в алфавитном порядке
+    // так как элементы уже есть в DOM дереве, то при добавлении элемент удаляется со своей предыдущей позиции
+    itemsArray.forEach(item => {
+      list.append(item);
+    });
+  </script>
+</body>
+</html>

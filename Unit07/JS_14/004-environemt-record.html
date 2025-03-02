@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Record</title>
+</head>
+
+<body>
+    <script>
+        // Environemt Record - специальный тип, использующийся для ассоциации идентификаторов с определенными фрагментами кода.
+        // Каждый Environemt Record содержит [[OuterEnv]] поле, которое ссылается на внешнее окружение или null.
+
+        let y = 10;
+
+        function sum() {
+            let x = 20;
+            console.log(x + y); // тут происходит разрешение идентификатора (Identifier Resolution)
+            // Разрешение идентификатора - процесс поиска идентификатора. Если идентификатор не найден в текущей
+            // записи окружения, процесс поиска продолжится во внешней записи окружения. Если идентификатор не найден
+            // происходит исключение ReferenceError
+        }
+
+        sum();
+
+        let globalEnvironmentRecord = { // глобальное лексическое окружение
+            y: 10,
+            sum: function () { },
+            OuterEnv: null
+        };
+
+        let sumEnvironmentRecord = { // лексическое окружение, связанное с вызовом функции sum на 26 строке
+            x: 20,
+            OuterEnv: globalEnvironmentRecord
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример использования замыкания</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo nam amet velit ut explicabo nisi voluptas
+        dicta ad, autem, id asperiores rem corporis esse. Dignissimos dicta facilis eaque mollitia.
+    </p>
+
+    <a href="#" id="size-16">16</a>
+    <a href="#" id="size-24">24</a>
+    <a href="#" id="size-43">43</a>
+
+    <script>
+        function makeSizer(size) {
+            return function () {
+                document.body.style.fontSize = size + 'px';
+            };
+        }
+
+        // замыкания с различными значениями переменной size
+        let size16 = makeSizer(16);
+        let size24 = makeSizer(24);
+        let size43 = makeSizer(43);
+
+        document.querySelector("#size-16").onclick = size16;
+        document.querySelector("#size-24").onclick = size24;
+        document.querySelector("#size-43").onclick = size43;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This указывает на объект</title>
+</head>
+
+<body>
+    <script>
+        let obj1 = {
+            name: "Test 1",
+            // Функция находится в объекте - контекст указывает на этот объект
+            printContextValue: function () {
+                console.log(this);
+            }
+        };
+
+        let obj2 = {
+            name: "Test 2"
+        };
+
+        let obj3 = new Object();
+        obj3.name = "Test 3";
+
+        // функцию копируем из obj1 в obj2 и obj3, одна и та же функция, будет срабатывать с разным контекстом
+        obj2.printContextValue = obj1.printContextValue;
+        obj3.printContextValue = obj1.printContextValue;
+
+        obj1.printContextValue();
+        obj2.printContextValue();
+        obj3.printContextValue();
+    </script>
+</body>
+
+</html>

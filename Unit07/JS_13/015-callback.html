@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции обратного вызова</title>
+</head>
+<body>
+    <p>
+        Paragraph 1
+    </p>
+    <p>
+        Paragraph 2
+    </p>
+    <p>
+        Paragraph 3
+    </p>
+    <p>
+        Paragraph 4
+    </p>
+    <p>
+        Paragraph 5
+    </p>
+    <p>
+        Paragraph 6
+    </p>
+    <p>
+        Paragraph 7
+    </p>
+    <p>
+        Paragraph 8
+    </p>
+    <p>
+        Paragraph 9
+    </p>
+    <p>
+        Paragraph 10
+    </p>
+
+    <script>
+        function findNodes(callback, context) {
+            let nodes = [],
+                pArray = [],
+                found;
+
+            pArray = document.getElementsByTagName("p");
+
+            if (typeof callback != "function") {
+                callback = false;
+            }
+
+            for (let i = 0; i < pArray.length; i++) {
+                found = pArray[i];
+
+                if (callback) {
+
+                    // вызов функции указывая в качестве контекста объект context
+                    callback.call(context, found);
+                }
+
+                nodes.push(found);
+            }
+
+            return nodes;
+        }
+
+        let app = {};
+        app.color = "green";
+        app.borderStyle = "solid";
+        app.borderWidth = "1px";
+
+        // Функция для изменения найденного узла.
+        app.makeBorder = function (node) {
+            node.style.border = this.borderStyle + " " + this.borderWidth + " " + this.color;
+        }
+
+        // найти узлы и добавить им рамку
+        findNodes(app.makeBorder, app);
+
+    </script>
+
+</body>
+</html>
+

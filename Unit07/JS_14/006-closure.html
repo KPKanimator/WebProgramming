@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        // Замыкание (Closure) - это функция и лексическое окружение, в котором эта функция была создана.
+
+        function makeCounter() {
+            let counter = 0;
+
+            function increment() { // функция определена в лексическом окружении, которое было создано при запуске функции makeCounter
+                return counter += 1;
+            }
+
+            return increment; // функция содержит ссылку на лексическое окружение, в котором она была создана
+        }
+
+        let counter1 = makeCounter(); // возвращает замыкание 
+        let counter2 = makeCounter(); // возвращает замыкание 
+
+        // так как при каждом вызове makeCounter создается новое лексическое окружение
+        // замыкания, сохраненные в переменных counter1 и counter2, будут работать с двумя 
+        // независимыми переменными counter, расположенными в разных лексических окружениях
+
+        console.log("counter1");
+
+        console.log(counter1());
+        console.log(counter1());
+        console.log(counter1());
+        console.log(counter1());
+
+        console.log("counter2");
+
+        console.log(counter2());
+        console.log(counter2());
+        console.log(counter2());
+        console.log(counter2());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=l.0">
+    <title>querySelector #1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestiae nihil autem aliquid.
+        Cupiditate tempore aut perspiciatis incidunt est amet, itaque, deleniti mollitia officia maiores sapiente ullam
+        consequuntur quaerat minima?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum corrupti sapiente, qui eius fuga nisi. Sequi
+        quibusdam sapiente deserunt fuga dolorem commodi perspiciatis, cum soluta possimus quaerat. Lahore, eveniet
+        iusto.</p>
+
+    <script>
+        // document - позволяет получить доступ к DOM дереву 
+        // querySelector - производит поиск по DOM дереву и возвращает первый элемент, подходящий под CSS селектор, указанный в параметрах
+        let paragraph = document.querySelector("#first");   // находим элемент с id="first" 
+        paragraph.style.border = "2px solid red"; // меняем стили для элемента, задавая для свойства border значение "2рх solid red" 
+    </script>  
+</body>
+
+</html>

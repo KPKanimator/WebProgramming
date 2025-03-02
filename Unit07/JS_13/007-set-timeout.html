@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <script>
+        function showMessage() {
+            alert("Hello world");
+        }
+
+        // setTimeout - планирует однократный вызов функции, спустя указанный интервал времени
+        // первый параметр - запускаемая функция
+        // второй параметр - задержка в миллисекундах (1000 миллисекунд = 1 секунда)
+        setTimeout(showMessage, 5000); // функция showMessage будет запущена через 5 секунд после выполнения данной строки
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <title>querySelector #2</title>
+  <style>
+      body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+  </style>
+</head>
+<body>
+
+  <div>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, numquam unde. Aut dolorum in, quia numquam error recusandae est odio nesciunt ut ilium blanditiis illo minima, officiis mollitia eaque fugit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum corrupti sapiente, qui eius fuga nisi. Sequi quibusdam sapiente deserunt fuga dolorem commodi perspiciatis, cum soluta possimus quaerat. Labore, eveniet iusto.</p>
+    <a href="https://stm.korobchinskiy.com">STM</a>
+    <a href="https://k304.khai.edu">K304</a>
+  </div>
+  <input type="radio" name="answer" checked /> Yes
+  <input type="radio" name="answer" /> No
+  <ul class="my-list">
+    <li>List Item 1-1</li>
+    <li>List Item 2-1</li>
+    <li>List Item 3-1</li>
+    <li>List Item 4-1</li>
+    <li>List Item 5-1</li>
+  </ul>
+  <article>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est fugit natus sapiente laborum esse. Aperiam eum ilium fuga laborum alias consectetur, quibusdam nisi quidem aliquam nulla, quae vero expedita fugiat.
+  </article>
+  <ul class="my-list">
+    <li>List Item 1-5</li>
+    <li>List Item 2-5</li>
+    <li>List Item 3-5</li>
+    <li>List Item 4-5</li>
+    <li>List Item 5-5</li>
+  </ul>
+  
+  <script>
+    // поиск по id (возвращается один элемент DOM)
+    let paragraph = document.getElementById("first");
+    paragraph.style.border = "2px solid red";
+    // поиск по атрибуту name (возвращается коллекция элементов DOM)
+    let radioButtons = document.getElementsByName("answer");
+    for (const button of radioButtons) {
+      button.checked = !button.checked; // меняем значение checked на противоположное
+    }
+    // поиск по имени тега (возвращается коллекция элементов DOM)
+    let listltems = document.getElementsByTagName("li");
+    for (const item of listltems) {
+      item.style.margin = "2px";
+      item.style.border = "2px solid green";
+    }
+    // поиск по css классу (возвращается коллекция элементов DOM)
+    let lists = document.getElementsByClassName("my-list");
+    for (const list of lists) {
+      list.style.border = "2px solid blue";
+    }
+  </script>
+  
+</body>
+</html>

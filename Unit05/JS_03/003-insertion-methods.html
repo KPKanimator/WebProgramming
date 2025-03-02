@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Методы вставки</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <ul>
+    <li>Item l</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    let ul = document.querySelector("ul");
+    
+    let item = document.createElement("li");
+    item.innerHTML = ">>>Item 0<<<";
+    ul.prepend(item);
+    
+    let item2 = document.createElement("li");
+    item2.innerHTML = ">>>Item 4<<<";
+    ul.append(item2);
+    
+    ul.before("before"); // методы для вставки могут принимать узлы или строковые значения
+    ul.after("after");
+  </script>
+</body>
+</html>
+
+
+
+

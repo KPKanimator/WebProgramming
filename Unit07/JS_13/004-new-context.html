@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контекст в конструкторе</title>
+</head>
+
+<body>
+    <script>
+        //"use strict";
+
+        function User(login, email) {
+            console.log(this);
+        }
+
+        class Client {
+            constructor(firstName, lastName) {
+                console.log(this);
+            }
+        }
+
+        let u1 = new User();
+        let c1 = new Client();
+
+        let u2 = User(); // без new контекст конструктора - глобальный объект или undefined в strict mode
+        let c2 = Client(); // экземпляр класса нельзя создать без ключевого слова new
+    </script>
+</body>
+
+</html>

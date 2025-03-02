@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Использование свойства className</title>
+
+    <style>
+        .message {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid gray;
+            border-radius: 8px;
+            background-color: orange;
+            font-weight: bold;
+            margin: 8px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first-div" class="message">
+        Стили задаются через CSS класс
+    </div>
+
+    <div id="second-div">
+        Стили задаются через JavaScript код, через указание CSS класса
+    </div>
+
+    <script>
+        let div = document.querySelector("#second-div");
+        // задание CSS класса для элемента
+        div.className = "message";
+    </script>
+</body>
+
+</html>

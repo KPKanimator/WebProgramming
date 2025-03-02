@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена контекста</title>
+</head>
+
+<body>
+    <div id="elem1"></div>
+    <div id="elem2"></div>
+    <div id="elem3"></div>
+
+    <script>
+        let obj1 = {
+            prop1: "Hello",
+            prop2: "world"
+        };
+
+        function show(elementSelector, color) {
+            let element = document.querySelector(elementSelector);
+            element.style.color = color;
+            element.innerHTML += this.prop1 + " ";
+            element.innerHTML += this.prop2;
+        }
+
+        show.apply(obj1, ["#elem1", "red"]); // параметры передаются массивом
+        show.call(obj1, "#elem2", "green"); // параметры передаются по отдельности
+
+        let f = show.bind(obj1, "#elem3", "blue"); // параметры могут быть привязаны к создаваемой функции вместе с контекстом
+        f();
+
+        // или
+        // let f = show.bind(obj1);
+        // f("#elem3", "blue");
+    </script>
+</body>
+
+</html>

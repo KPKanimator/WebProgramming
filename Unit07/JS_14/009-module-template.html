@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон модуль</title>
+</head>
+
+<body>
+    <script>
+        // шаблон модуль, позволяет создать объект с закрытыми и открытыми членами
+        let calc = (function () {
+            // закрытые члены модуля
+            let x, y;
+
+            // открытые члены модуля
+            // x и y находятся в лексическом окружении IIFE и сохраняются в замыканиях, создающихся функциями add, setX, setY
+            return {
+                add: function () {
+                    return x + y;
+                },
+
+                setX: function (val) {
+                    x = val;
+                },
+
+                setY: function (val) {
+                    y = val;
+                }
+            }
+        }());
+
+        calc.setX(2);
+        calc.setY(3);
+
+        console.log(calc.add());
+    </script>
+</body>
+
+</html>
