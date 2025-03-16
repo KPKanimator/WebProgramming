@@ -1,6 +1,6 @@
 # Web-programming (.Net Framework)
 ## The course site: [stm.korobchinskiy.com](https://stm.korobchinskiy.com/course/view.php?id=5)
-## 2022-2024
+## 2022-2025
 
 
 ## Department of Mathematical Modeling and Artificial Intelligence #304
